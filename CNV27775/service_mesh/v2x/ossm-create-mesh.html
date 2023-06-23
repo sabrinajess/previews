@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2476,6 +2481,12 @@
 <li><a href="#ossm-add-project-member-roll-resource-cli_ossm-create-mesh">Adding or removing projects from the service mesh using ServiceMeshMemberRoll resource with the CLI</a></li>
 <li><a href="#ossm-adding-project-using-smm-resource-console_ossm-create-mesh">Adding a project to the service mesh using the ServiceMeshMember resource with the web console</a></li>
 <li><a href="#ossm-adding-project-using-smm-resource-cli_ossm-create-mesh">Adding a project to the service mesh using the ServiceMeshMember resource with the CLI</a></li>
+<li><a href="#ossm-about-adding-projects-using-label-selectors_ossm-create-mesh">About adding projects using label selectors</a>
+<ul class="sectlevel2">
+<li><a href="#ossm-adding-project-using-label-selectors-console_ossm-create-mesh">Adding a project to the Service Mesh using label selectors with the web console</a></li>
+<li><a href="#ossm-adding-project-using-label-selectors-cli_ossm-create-mesh">Adding a project to the Service Mesh using label selectors with the CLI</a></li>
+</ul>
+</li>
 <li><a href="#ossm-tutorial-bookinfo-overview_ossm-create-mesh">Bookinfo example application</a>
 <ul class="sectlevel2">
 <li><a href="#ossm-tutorial-bookinfo-install_ossm-create-mesh">Installing the Bookinfo application</a></li>
@@ -2513,7 +2524,7 @@
 </table>
 </div>
 <div class="paragraph">
-<p>You can add projects to an existing service mesh using either the OpenShift Container Platform web console or the CLI. There are two methods to add a project to a service mesh:</p>
+<p>You can add projects to an existing service mesh using either the OpenShift Container Platform web console or the CLI. There are three methods to add a project to a service mesh:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2521,44 +2532,15 @@
 <p>Specifying the project name in the <code>ServiceMeshMemberRoll</code> resource.</p>
 </li>
 <li>
+<p>Configuring label selectors in the <code>spec.labelSelectors</code> field of the <code>ServiceMeshMemberRoll</code> resource.</p>
+</li>
+<li>
 <p>Creating the <code>ServiceMeshMember</code> resource in the project.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<div class="title">ServiceMeshMemberRoll method</div>
-<p>This is the simplest way to add a project to a service mesh. To add a project, specify the project name in the <code>spec.members</code> field of the <code>ServiceMeshMemberRoll</code> resource. The <code>ServiceMeshMemberRoll</code> resource specifies which projects are controlled by the <code>ServiceMeshControlPlane</code> resource.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Adding projects using this method requires the user to have the <code>update servicemeshmemberrolls</code> and the <code>update pods</code> privileges in the project that is being added.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If you already have an application, workload, or service to add to the service mesh, see the instructions for adding or removing projects from the service mesh using the <code>ServiceMeshMemberRoll</code> resource with the <a href="../../service_mesh/v2x/ossm-create-mesh.html#ossm-add-project-member-roll-recourse-console_ossm-create-mesh">web console</a> or with the <a href="../../service_mesh/v2x/ossm-create-mesh.html#ossm-add-project-member-roll-resource-cli_ossm-create-mesh">CLI</a>.</p>
-</li>
-<li>
-<p>Alternatively, to install a sample application called Bookinfo and add it to a <code>ServiceMeshMemberRoll</code> resource, see <a href="../../service_mesh/v2x/ossm-create-mesh.html#ossm-tutorial-bookinfo-overview_ossm-create-mesh">Bookinfo example application</a> tutorial.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<div class="title">ServiceMeshMember method</div>
-<p>A <code>ServiceMeshMember</code> resource provides a way to add a project to a service mesh without modifying the <code>ServiceMeshMemberRoll</code> resource. To add a project, create a <code>ServiceMeshMember</code> resource in the project that you want to add to the service mesh. When the Service Mesh Operator processes the <code>ServiceMeshMember</code> object, the project appears in the <code>status.members</code> list of the <code>ServiceMeshMemberRoll</code> resource. Then, the services that reside in the project are made available to the mesh. For more information, see the instructions for adding projects to the service mesh using the <code>ServiceMeshMember</code> resource with the <a href="../../service_mesh/v2x/ossm-create-mesh.html#ossm-adding-project-using-smm-resource-console_ossm-create-mesh">web console</a> or with the <a href="../../service_mesh/v2x/ossm-create-mesh.html#ossm-adding-project-using-smm-resource-cli_ossm-create-mesh">CLI</a>.</p>
-</div>
-<div class="paragraph">
-<p>The mesh administrator must grant each mesh user permission to reference the <code>ServiceMeshControlPlane</code> resource in the <code>ServiceMeshMember</code> resource. With this permission in place, this method of adding projects to a mesh can be used when the mesh user does not have direct access rights for the service mesh project or the <code>ServiceMeshMemberRoll</code> resource. For more information, see <a href="../../service_mesh/v2x/ossm-profiles-users.html#ossm-members_ossm-profiles-users">Creating the Red Hat OpenShift Service Mesh members</a>.</p>
+<p>If you choose to use the first method, then you must create the <code>ServiceMeshMemberRoll</code> resource.</p>
 </div>
 </div>
 </div>
@@ -2863,7 +2845,7 @@
 <h2 id="ossm-adding-project-using-smm-resource-console_ossm-create-mesh"><a class="anchor" href="#ossm-adding-project-using-smm-resource-console_ossm-create-mesh"></a>Adding a project to the service mesh using the ServiceMeshMember resource with the web console</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can add one or more projects to the Service Mesh from the web console.</p>
+<p>You can add one or more projects to the Service Mesh from the OpenShift Container Platform web console.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
@@ -2994,10 +2976,177 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="ossm-about-adding-projects-using-label-selectors_ossm-create-mesh"><a class="anchor" href="#ossm-about-adding-projects-using-label-selectors_ossm-create-mesh"></a>About adding projects using label selectors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For cluster-wide deployments, you can use label selectors to add projects to the mesh. Label selectors specified in the <code>ServiceMeshMemberRoll</code> resource enable the Service Mesh operator to add or remove namespaces to or from the mesh based on namespace labels. Unlike other standard OpenShift Container Platform resources that you can use to specify a single label selector, you can use the <code>ServiceMeshMemberRoll</code> resource to specify multiple label selectors. If the labels for a namespace match any of the selectors specified in the <code>ServiceMeshMemberRoll</code> resource, then the namespace is included in the mesh.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In OpenShift Container Platform, a project is essentially a Kubernetes namespace with additional annotations, such as the range of user IDs that can be used in the project. Typically, the OpenShift Container Platform web console uses the term <em>project</em>, and the CLI uses the term <em>namespace</em>, but the terms are essentially synonymous.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="ossm-adding-project-using-label-selectors-console_ossm-create-mesh"><a class="anchor" href="#ossm-adding-project-using-label-selectors-console_ossm-create-mesh"></a>Adding a project to the Service Mesh using label selectors with the web console</h3>
+<div class="paragraph">
+<p>You can use labels selectors to add a project to the Service Mesh with the OpenShift Container Platform web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The deployment has an installed, verified Red Hat OpenShift Service Mesh Operator.</p>
+</li>
+<li>
+<p>The deployment has an existing <code>ServiceMeshMemberRoll</code> resource.</p>
+</li>
+<li>
+<p>You are logged in as a user with mesh admin privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Log in to the OpenShift Container Platform web console.</p>
+</li>
+<li>
+<p>Navigate to <strong>Operators</strong> &#8594; <strong>Installed Operators</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Project</strong> menu, and from the drop-down list, select the project where your <code>ServiceMeshMemberRoll</code> resource is deployed. For example, <strong>istio-system</strong>.</p>
+</li>
+<li>
+<p>Click the Red Hat OpenShift Service Mesh Operator.</p>
+</li>
+<li>
+<p>Click the <strong>Istio Service Mesh Member Roll</strong> tab.</p>
+</li>
+<li>
+<p>Click <strong>Create ServiceMeshMember Roll</strong>.</p>
+</li>
+<li>
+<p>Accept the default name for the <code>ServiceMeshMemberRoll</code>.</p>
+</li>
+<li>
+<p>In the <strong>Labels</strong> field, enter key-value pairs to define the labels that identify which namespaces to include in the service mesh. If a project namespace has either label specified by the selectors, then the project namespace is included in the service mesh. You do not need to include both labels.</p>
+<div class="paragraph">
+<p>For example, entering <code>mykey=myvalue</code> includes all namespaces with this label as part of the mesh. When the selector identifies a match, the project namespace is added to the service mesh.</p>
+</div>
+<div class="paragraph">
+<p>Entering <code>myotherkey=myothervalue</code> includes all namespaces with this label as part of the mesh. When the selector identifies a match, the project namespace is added to the service mesh.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ossm-adding-project-using-label-selectors-cli_ossm-create-mesh"><a class="anchor" href="#ossm-adding-project-using-label-selectors-cli_ossm-create-mesh"></a>Adding a project to the Service Mesh using label selectors with the CLI</h3>
+<div class="paragraph">
+<p>You can use label selectors to add a project to the Service Mesh with the CLI.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The deployment has an installed, verified Red Hat OpenShift Service Mesh Operator.</p>
+</li>
+<li>
+<p>The deployment has an existing <code>ServiceMeshMemberRoll</code> resource.</p>
+</li>
+<li>
+<p>You are logged in as a user with mesh admin privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Log in to the OpenShift Container Platform CLI.</p>
+</li>
+<li>
+<p>Edit the <code>ServiceMeshMemberRoll</code> resource.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc edit smmr <span class="nt">-n</span> &lt;controlplane_project&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The previous example uses <code>&lt;controlplane_project&gt;</code> as an example. You can deploy the Service Mesh control plane to any project as long as it is separate from the project that contains your services.</p>
+</div>
+</li>
+<li>
+<p>Modify the YAML file to include namespace label selectors in the <code>spec.memberSelectors</code> field of the <code>ServiceMeshMemberRoll</code> resource.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Instead of using the <code>matchLabels</code> field, you can also use the <code>matchExpressions</code> field in the selector.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshMemberRoll</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">memberSelectors</span><span class="pi">:</span> <i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="pi">-</span> <span class="na">matchLabels</span><span class="pi">:</span> <i class="conum" data-value="2"></i><b>(2)</b>
+      <span class="na">mykey</span><span class="pi">:</span> <span class="s">myvalue</span> <i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="pi">-</span> <span class="na">matchLabels</span><span class="pi">:</span> <i class="conum" data-value="3"></i><b>(3)</b>
+      <span class="na">myotherkey</span><span class="pi">:</span> <span class="s">myothervalue</span> <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Contains the label selectors used to identify which project namespaces are included in the service mesh. If a project namespace has either label specified by the selectors, then the project namespace is included in the service mesh. The project namespace does not need both labels to be included.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Specifies all namespaces with the <code>mykey=myvalue</code> label. When the selector identifies a match, the project namespace is added to the service mesh.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Specifies all namespaces with the <code>myotherkey=myothervalue</code> label. When the selector identifies a match, the project namespace is added to the service mesh.</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="ossm-tutorial-bookinfo-overview_ossm-create-mesh"><a class="anchor" href="#ossm-tutorial-bookinfo-overview_ossm-create-mesh"></a>Bookinfo example application</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Bookinfo example application allows you to test your Red Hat OpenShift Service Mesh 2.3.3 installation on OpenShift Container Platform.</p>
+<p>The Bookinfo example application allows you to test your Red Hat OpenShift Service Mesh 2.4 installation on OpenShift Container Platform.</p>
 </div>
 <div class="paragraph">
 <p>The Bookinfo application displays information about a book, similar to a single catalog entry of an online book store. The application displays a page that describes the book, book details (ISBN, number of pages, and other information), and book reviews.</p>
@@ -3049,7 +3198,7 @@
 <p>OpenShift Container Platform 4.1 or higher installed.</p>
 </li>
 <li>
-<p>Red Hat OpenShift Service Mesh 2.3.3 installed.</p>
+<p>Red Hat OpenShift Service Mesh 2.4 installed.</p>
 </li>
 <li>
 <p>Access to the OpenShift CLI (<code>oc</code>).</p>
@@ -3190,7 +3339,7 @@ default   1/1     Configured   70s   ["bookinfo"]</span></code></pre>
 <p>From the CLI, deploy the Bookinfo application in the <em>`bookinfo`</em> project by applying the <code>bookinfo.yaml</code> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/platform/kube/bookinfo.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/platform/kube/bookinfo.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3219,7 +3368,7 @@ deployment.apps/productpage-v1 created</span></code></pre>
 <p>Create the ingress gateway by applying the <code>bookinfo-gateway.yaml</code> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/bookinfo-gateway.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/bookinfo-gateway.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3259,7 +3408,7 @@ virtualservice.networking.istio.io/bookinfo created</span></code></pre>
 <p>If you did not enable mutual TLS:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/destination-rule-all.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/destination-rule-all.yaml</code></pre>
 </div>
 </div>
 </li>
@@ -3267,7 +3416,7 @@ virtualservice.networking.istio.io/bookinfo created</span></code></pre>
 <p>If you enabled mutual TLS:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/destination-rule-all-mtls.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/destination-rule-all-mtls.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3418,7 +3567,7 @@ reviews-v3-6dfd49b55b-vcwpf       2/2     Running   0          12m</span></code>
 <p>OpenShift Container Platform 4.1 or higher installed.</p>
 </li>
 <li>
-<p>Red Hat OpenShift Service Mesh 2.3.3 installed.</p>
+<p>Red Hat OpenShift Service Mesh 2.4 installed.</p>
 </li>
 <li>
 <p>Access to the OpenShift CLI (<code>oc</code>).</p>

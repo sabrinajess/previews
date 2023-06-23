@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2465,6 +2470,13 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
+<li><a href="#cert-manager-operator-release-notes-1.11.1">Release notes for cert-manager Operator for Red Hat OpenShift 1.11.1</a>
+<ul class="sectlevel2">
+<li><a href="#cert-manager-operator-1.11.1-new-features-and-enhancements">New features and enhancements</a></li>
+<li><a href="#cert-manager-operator-1.11.1-bug-fixes">Bug fixes</a></li>
+<li><a href="#cert-manager-operator-1.11.1-known-issues">Known issues</a></li>
+</ul>
+</li>
 <li><a href="#cert-manager-operator-release-notes-1.10.2">Release notes for cert-manager Operator for Red Hat OpenShift 1.10.2</a>
 <ul class="sectlevel2">
 <li><a href="#cert-manager-operator-1.10.2-new-features-and-enhancements">New features and enhancements</a></li>
@@ -2482,6 +2494,98 @@
 </div>
 <div class="paragraph">
 <p>For more information, see <a href="../../security/cert_manager_operator/index.html#cert-manager-operator-about">About the cert-manager Operator for Red Hat OpenShift</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cert-manager-operator-release-notes-1.11.1"><a class="anchor" href="#cert-manager-operator-release-notes-1.11.1"></a>Release notes for cert-manager Operator for Red Hat OpenShift 1.11.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Issued: 2023-06-21</p>
+</div>
+<div class="paragraph">
+<p>The following advisory is available for the cert-manager Operator for Red Hat OpenShift 1.11.1:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://access.redhat.com/errata/RHEA-2023:3439">RHEA-2023:3439</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information, see the <a href="https://cert-manager.io/docs/release-notes/release-notes-1.11/">cert-manager project release notes for v1.11</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="cert-manager-operator-1.11.1-new-features-and-enhancements"><a class="anchor" href="#cert-manager-operator-1.11.1-new-features-and-enhancements"></a>New features and enhancements</h3>
+<div class="paragraph">
+<p>This is the general availability (GA) release of the cert-manager Operator for Red Hat OpenShift.</p>
+</div>
+<div class="sect3">
+<h4 id="cert-manager-log-level-1.11.1"><a class="anchor" href="#cert-manager-log-level-1.11.1"></a>Setting log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>To troubleshoot issues with cert-manager and the cert-manager Operator for Red Hat OpenShift, you can now configure the log level verbosity by setting a log level for cert-manager and the cert-manager Operator for Red Hat OpenShift. For more information, see <a href="../../security/cert_manager_operator/cert-manager-log-levels.html#cert-manager-log-levels">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cert-manager-authentication-aws-1.11.1"><a class="anchor" href="#cert-manager-authentication-aws-1.11.1"></a>Authenticating the cert-manager Operator for Red Hat OpenShift with AWS</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>You can now configure cloud credentials for the cert-manager Operator for Red Hat OpenShift on AWS clusters with Security Token Service (STS) and without STS. For more information, see <a href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html#cert-manager-authenticate-aws">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS  Security Token Service</a> and <a href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html#cert-manager-authentication-non-sts">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cert-manager-authentication-gcp-1.11.1"><a class="anchor" href="#cert-manager-authentication-gcp-1.11.1"></a>Authenticating the cert-manager Operator for Red Hat OpenShift with GCP</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>You can now configure cloud credentials for the cert-manager Operator for Red Hat OpenShift on GCP clusters with Workload Identity and without Workload Identity. For more information, see <a href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html#cert-manager-authenticate-gcp">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a> and <a href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html#cert-manager-authenticate-non-sts-gcp">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cert-manager-operator-1.11.1-bug-fixes"><a class="anchor" href="#cert-manager-operator-1.11.1-bug-fixes"></a>Bug fixes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Previously, the <code>cm-acme-http-solver</code> pod did not use the latest published Red Hat image <code>registry.redhat.io/cert-manager/jetstack-cert-manager-acmesolver-rhel9</code>. With this release, the <code>cm-acme-http-solver</code> pod uses the latest published Red Hat image <code>registry.redhat.io/cert-manager/jetstack-cert-manager-acmesolver-rhel9</code>. (<a href="https://issues.redhat.com/browse/OCPBUGS-10821"><strong>OCPBUGS-10821</strong></a>)</p>
+</li>
+<li>
+<p>Previously, the cert-manager Operator for Red Hat OpenShift did not support changing labels for cert-manager pods such as controller, CA injector, and Webhook pods. With this release, you can add labels to cert-manager pods. (<a href="https://issues.redhat.com/browse/OCPBUGS-8466"><strong>OCPBUGS-8466</strong></a>)</p>
+</li>
+<li>
+<p>Previously, you could not update the log verbosity level in the cert-manager Operator for Red Hat OpenShift. You can now update the log verbosity level by using an environmental variable <code>OPERATOR_LOG_LEVEL</code> in its subscription resource. (<a href="https://issues.redhat.com/browse/OCPBUGS-9994"><strong>OCPBUGS-9994</strong></a>)</p>
+</li>
+<li>
+<p>Previously, when uninstalling the cert-manager Operator for Red Hat OpenShift, if you select the <strong>Delete all operand instances for this operator</strong> checkbox in the OpenShift Container Platform web console, the Operator was not uninstalled properly. The cert-manager Operator for Red Hat OpenShift is now properly uninstalled. (<a href="https://issues.redhat.com/browse/OCPBUGS-9960"><strong>OCPBUGS-9960</strong></a>)</p>
+</li>
+<li>
+<p>Previously, the cert-manager Operator for Red Hat OpenShift did not support using Google workload identity federation. The cert-manager Operator for Red Hat OpenShift now supports using Google workload identity federation. (<a href="https://issues.redhat.com/browse/OCPBUGS-9998"><strong>OCPBUGS-9998</strong></a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cert-manager-operator-1.11.1-known-issues"><a class="anchor" href="#cert-manager-operator-1.11.1-known-issues"></a>Known issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>After installing the cert-manager Operator for Red Hat OpenShift, if you navigate to <strong>Operators → Installed Operators</strong> and select <strong>Operator details</strong> in the OpenShift Container Platform web console, you cannot see the cert-manager resources that are created across all namespaces. As a workaround, you can navigate to <strong>Home &#8594; API Explorer</strong> to see the cert-manager resources. (<a href="https://issues.redhat.com/browse/OCPBUGS-11647"><strong>OCPBUGS-11647</strong></a>)</p>
+</li>
+<li>
+<p>After uninstalling the cert-manager Operator for Red Hat OpenShift by using the web console, the cert-manager Operator for Red Hat OpenShift does not remove the cert-manager controller, CA injector, and Webhook pods automatically from the <code>cert-manager</code> namespace. As a workaround, you can manually delete the cert-manager controller, CA injector, and Webhook pod deployments present in the <code>cert-manager</code> namespace. (<a href="https://issues.redhat.com/browse/OCPBUGS-13679"><strong>OCPBUGS-13679</strong></a>)</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -2575,6 +2679,12 @@
 </li>
 <li>
 <p>The cert-manager Operator for Red Hat OpenShift now supports injecting custom CA certificates and propagating cluster-wide egress proxy environment variables.</p>
+</li>
+<li>
+<p>You can customize the cert-manager Operator for Red Hat OpenShift API fields by overriding environment variables and arguments. For more information, see <a href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html#cert-manager-customizing-api-fields">Customizing cert-manager Operator API fields</a></p>
+</li>
+<li>
+<p>You can enable monitoring and metrics collection for the cert-manager Operator for Red Hat OpenShift by using a service monitor to perform the custom metrics scraping. After you have enabled monitoring for the cert-manager Operator for Red Hat OpenShift, you can query its metrics by using the OpenShift Container Platform web console. For more information, see <a href="../../security/cert_manager_operator/cert-manager-monitoring.html#cert-manager-monitoring">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></p>
 </li>
 </ul>
 </div>

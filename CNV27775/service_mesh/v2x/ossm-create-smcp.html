@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2465,12 +2470,23 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
+<li><a href="#ossm-about-smcp_ossm-create-smcp">About ServiceMeshControlPlane</a>
+<ul class="sectlevel2">
 <li><a href="#ossm-control-plane-deploy-operatorhub_ossm-create-smcp">Deploying the Service Mesh control plane from the web console</a></li>
 <li><a href="#ossm-control-plane-deploy-cli_ossm-create-smcp">Deploying the Service Mesh control plane using the CLI</a></li>
 <li><a href="#ossm-validate-control-plane-cli_ossm-create-smcp">Validating your SMCP installation with the CLI</a></li>
+</ul>
+</li>
 <li><a href="#ossm-config-control-plane-infrastructure-node_ossm-create-smcp">Configuring all Service Mesh control plane components to run on infrastructure nodes</a></li>
 <li><a href="#ossm-config-individual-control-plane-infrastructure-node_ossm-create-smcp">Configuring individual Service Mesh control plane components to run on infrastructure nodes</a></li>
 <li><a href="#ossm-confirm-smcp-infrastructure-node_ossm-create-smcp">Verifying the Service Mesh control plane is running on infrastructure nodes</a></li>
+<li><a href="#ossm-about-control-plane-and-cluster-wide-deployment_ossm-create-smcp">About control plane and cluster-wide deployments</a>
+<ul class="sectlevel2">
+<li><a href="#ossm-deploy-cluster-wide-control-plane-console_ossm-create-smcp">Configuring the control plane for cluster-wide deployment with the web console</a></li>
+<li><a href="#ossm-deploy-cluster-wide-control-plane-cli_ossm-create-smcp">Configuring the control plane for cluster-wide deployment with the CLI</a></li>
+<li><a href="#ossm-customize-smrr-cluster-wide_ossm-create-smcp">Customizing the member roll for a cluster-wide mesh</a></li>
+</ul>
+</li>
 <li><a href="#ossm-validate-control-plane-kiali_ossm-create-smcp">Validating your SMCP installation with Kiali</a></li>
 <li><a href="#ossm-install-rosa_ossm-create-smcp">Installing on Red Hat OpenShift Service on AWS (ROSA)</a>
 <ul class="sectlevel2">
@@ -2483,6 +2499,11 @@
 <li><a href="#next-steps">Next steps</a></li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ossm-about-smcp_ossm-create-smcp"><a class="anchor" href="#ossm-about-smcp_ossm-create-smcp"></a>About ServiceMeshControlPlane</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The control plane includes Istiod, Ingress and Egress Gateways, and other components, such as Kiali and Jaeger. The control plane must be deployed in a separate namespace than the Service Mesh Operators and the data plane applications and services. You can deploy a basic installation of the <code>ServiceMeshControlPlane</code>(SMCP) from the OpenShift Container Platform web console or the command line using the <code>oc</code> client tool.</p>
 </div>
@@ -2494,7 +2515,7 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>This basic installation is configured based on the default OpenShift settings and is not designed for production use. Use this default installation to verify your installation, and then configure your <code>ServiceMeshControlPlane</code> for your environment.</p>
+<p>This basic installation is configured based on the default OpenShift Container Platform settings and is not designed for production use. Use this default installation to verify your installation, and then configure your <code>ServiceMeshControlPlane</code> settings for your environment.</p>
 </div>
 </td>
 </tr>
@@ -2508,7 +2529,7 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Red Hat OpenShift Service on AWS (ROSA) places additional restrictions on where you can create resources and as a result the default deployment does not work. See <a href="../../service_mesh/v2x/ossm-create-smcp.html#ossm-install-rosa_ossm-create-smcp">Installing Service Mesh on Red Hat OpenShift Service on AWS</a> for additional requirements before deploying your SMCP in a ROSA environment.</p>
+<p>Red Hat OpenShift Service on AWS (ROSA) places additional restrictions on where you can create resources, and as a result, the default deployment does not work. See Installing Service Mesh on Red Hat OpenShift Service on AWS for additional requirements before deploying your SMCP in a ROSA environment.</p>
 </div>
 </td>
 </tr>
@@ -2528,11 +2549,8 @@
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ossm-control-plane-deploy-operatorhub_ossm-create-smcp"><a class="anchor" href="#ossm-control-plane-deploy-operatorhub_ossm-create-smcp"></a>Deploying the Service Mesh control plane from the web console</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ossm-control-plane-deploy-operatorhub_ossm-create-smcp"><a class="anchor" href="#ossm-control-plane-deploy-operatorhub_ossm-create-smcp"></a>Deploying the Service Mesh control plane from the web console</h3>
 <div class="paragraph">
 <p>You can deploy a basic <code>ServiceMeshControlPlane</code> by using the web console.  In this example, <code>istio-system</code> is the name of the Service Mesh control plane project.</p>
 </div>
@@ -2613,10 +2631,8 @@
 </ol>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="ossm-control-plane-deploy-cli_ossm-create-smcp"><a class="anchor" href="#ossm-control-plane-deploy-cli_ossm-create-smcp"></a>Deploying the Service Mesh control plane using the CLI</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ossm-control-plane-deploy-cli_ossm-create-smcp"><a class="anchor" href="#ossm-control-plane-deploy-cli_ossm-create-smcp"></a>Deploying the Service Mesh control plane using the CLI</h3>
 <div class="paragraph">
 <p>You can deploy a basic <code>ServiceMeshControlPlane</code> from the command line.</p>
 </div>
@@ -2653,7 +2669,7 @@
 <li>
 <p>Create a <code>ServiceMeshControlPlane</code> file named <code>istio-installation.yaml</code> using the following example. The version of the Service Mesh control plane determines the features available regardless of the version of the Operator.</p>
 <div class="listingblock">
-<div class="title">Example version 2.3 istio-installation.yaml</div>
+<div class="title">Example version 2.4 istio-installation.yaml</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v2</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshControlPlane</span>
@@ -2661,7 +2677,7 @@
   <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
   <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.3</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span>
   <span class="na">tracing</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">Jaeger</span>
     <span class="na">sampling</span><span class="pi">:</span> <span class="m">10000</span>
@@ -2713,10 +2729,8 @@ prometheus-58954b8d6b-m5std            2/2     Running   0          66m</span></
 </ol>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="ossm-validate-control-plane-cli_ossm-create-smcp"><a class="anchor" href="#ossm-validate-control-plane-cli_ossm-create-smcp"></a>Validating your SMCP installation with the CLI</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ossm-validate-control-plane-cli_ossm-create-smcp"><a class="anchor" href="#ossm-validate-control-plane-cli_ossm-create-smcp"></a>Validating your SMCP installation with the CLI</h3>
 <div class="paragraph">
 <p>You can validate the creation of the <code>ServiceMeshControlPlane</code> from the command line.</p>
 </div>
@@ -2749,6 +2763,7 @@ basic   10/10   ComponentsReady   ["default"]   2.1.1     66m</span></code></pre
 </div>
 </li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -2945,6 +2960,240 @@ basic   10/10   ComponentsReady   ["default"]   2.1.1     66m</span></code></pre
 </div>
 </div>
 <div class="sect1">
+<h2 id="ossm-about-control-plane-and-cluster-wide-deployment_ossm-create-smcp"><a class="anchor" href="#ossm-about-control-plane-and-cluster-wide-deployment_ossm-create-smcp"></a>About control plane and cluster-wide deployments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A cluster-wide deployment contains a Service Mesh Control Plane that monitors resources for an entire cluster. Monitoring resources for an entire cluster closely resembles Istio functionality in that the control plane uses a single query across all namespaces to monitor Istio and Kubernetes resources. As a result, cluster-wide deployments decrease the number of requests sent to the API server.</p>
+</div>
+<div class="paragraph">
+<p>You can configure the Service Mesh Control Plane for cluster-wide deployments using either the OpenShift Container Platform web console or the CLI.</p>
+</div>
+<div class="sect2">
+<h3 id="ossm-deploy-cluster-wide-control-plane-console_ossm-create-smcp"><a class="anchor" href="#ossm-deploy-cluster-wide-control-plane-console_ossm-create-smcp"></a>Configuring the control plane for cluster-wide deployment with the web console</h3>
+<div class="paragraph">
+<p>You can configure the <code>ServiceMeshControlPlane</code> resource for cluster-wide deployment using the OpenShift Container Platform web console. In this example, <code>istio-system</code> is the name of the Service Mesh control plane project.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Red Hat OpenShift Service Mesh Operator is installed.</p>
+</li>
+<li>
+<p>You are logged in using an account with the <code>cluster-admin</code> role, or if you use Red Hat OpenShift Dedicated with the <code>dedicated-admin</code> role.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Create a project named <code>istio-system</code>.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to <strong>Home</strong> &#8594; <strong>Projects</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create Project</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Name</strong> field, enter <code>istio-system</code>. The <code>ServiceMeshControlPlane</code> resource must be installed in a project that is separate from your microservices and Operators.</p>
+<div class="paragraph">
+<p>These steps use <code>istio-system</code> as an example. You can deploy the Service Mesh control plane to any project as long as it is separate from the project that contains your services.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Navigate to <strong>Operators</strong> &#8594; <strong>Installed Operators</strong>.</p>
+</li>
+<li>
+<p>Click the Red Hat OpenShift Service Mesh Operator, then click <strong>Istio Service Mesh Control Plane</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Istio Service Mesh Control Plane</strong> tab, click <strong>Create ServiceMeshControlPlane</strong>.</p>
+</li>
+<li>
+<p>Click <strong>YAML view</strong>. The version of the Service Mesh control plane determines the features available regardless of the version of the Operator.</p>
+</li>
+<li>
+<p>Modify the <code>spec.mode</code> field of the YAML file to specify <code>ClusterWide</code>.</p>
+<div class="listingblock">
+<div class="title">Example version 2.4 istio-installation.yaml</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v2</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshControlPlane</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v{MaistraVersion}</span>
+  <span class="na">mode</span><span class="pi">:</span> <span class="s">ClusterWide</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>. The Operator creates pods, services, and Service Mesh control plane components based on your configuration parameters. The operator also creates the <code>ServiceMeshMemberRoll</code> if it does not exist as part of the default configuration.</p>
+</li>
+<li>
+<p>To verify that the control plane installed correctly, click the <strong>Istio Service Mesh Control Plane</strong> tab.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click the name of the new <code>ServiceMeshControlPlane</code> object.</p>
+</li>
+<li>
+<p>Click the <strong>Resources</strong> tab to see the Red Hat OpenShift Service Mesh control plane resources that the Operator created and configured.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This module is included in the following assemblies:
+* service_mesh/v2x/ossm-create-smcp.adoc
+:_content-type: PROCEDURE</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ossm-deploy-cluster-wide-control-plane-cli_ossm-create-smcp"><a class="anchor" href="#ossm-deploy-cluster-wide-control-plane-cli_ossm-create-smcp"></a>Configuring the control plane for cluster-wide deployment with the CLI</h3>
+<div class="paragraph">
+<p>You can configure the <code>ServiceMeshControlPlane</code> resource for cluster-wide deployment using the CLI. In this example, <code>istio-system</code> is the name of the Service Mesh control plane namespace.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Red Hat OpenShift Service Mesh Operator is installed.</p>
+</li>
+<li>
+<p>You have access to the OpenShift CLI (<code>oc</code>).</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Log in to the OpenShift Container Platform CLI as a user with the <code>cluster-admin</code> role. If you use Red Hat OpenShift Dedicated, you must have an account with the <code>dedicated-admin</code> role.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc login <span class="nt">--username</span><span class="o">=</span>&lt;NAMEOFUSER&gt; https://&lt;HOSTNAME&gt;:6443</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a project named <code>istio-system</code>.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc new-project istio-system</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a <code>ServiceMeshControlPlane</code> file named <code>istio-installation.yaml</code> using the following example.</p>
+<div class="listingblock">
+<div class="title">Example version 2.4 istio-installation.yaml</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v2</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshControlPlane</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span>
+  <span class="na">mode</span><span class="pi">:</span> <span class="s">ClusterWide</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the following command to deploy the Service Mesh control plane, where <code>&lt;istio_installation.yaml&gt;</code> includes the full path to your file.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create <span class="nt">-n</span> istio-system <span class="nt">-f</span> &lt;istio_installation.yaml&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>To monitor the progress of the pod deployment, run the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get pods <span class="nt">-n</span> istio-system <span class="nt">-w</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see output similar to the following example:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME                                   READY   STATUS    RESTARTS   AGE
+grafana-b4d59bd7-mrgbr                 2/2     Running   0          65m
+istio-egressgateway-678dc97b4c-wrjkp   1/1     Running   0          108s
+istio-ingressgateway-b45c9d54d-4qg6n   1/1     Running   0          108s
+istiod-basic-55d78bbbcd-j5556          1/1     Running   0          108s
+jaeger-67c75bd6dc-jv6k6                2/2     Running   0          65m
+kiali-6476c7656c-x5msp                 1/1     Running   0          43m
+prometheus-58954b8d6b-m5std            2/2     Running   0          66m</span></code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This module is included in the following assemblies:
+* service_mesh/v2x/ossm-create-smcp.adoc</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ossm-customize-smrr-cluster-wide_ossm-create-smcp"><a class="anchor" href="#ossm-customize-smrr-cluster-wide_ossm-create-smcp"></a>Customizing the member roll for a cluster-wide mesh</h3>
+<div class="paragraph">
+<p>In cluster-wide mode, when you create the <code>ServiceMeshControlPlane</code> resource, the <code>ServiceMeshMemberRoll</code> resource is also created. You can modify the <code>ServiceMeshMemberRoll</code> resource after it gets created. After you modify the resource, the Service Mesh operator no longer changes it. If you modify the <code>ServiceMeshMemberRoll</code> resource by using the OpenShift Container Platform web console, accept the prompt to overwrite the modifications.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can create a <code>ServiceMeshMemberRoll</code> resource before deploying the <code>ServiceMeshControlPlane</code> resource. When you create the <code>ServiceMeshControlPlane</code> resource, the Service Mesh Operator will not modify the <code>ServiceMeshMemberRoll</code>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>ServiceMeshMemberRoll</code> resource name must be named <code>default</code> and must be created in the same project namespace as the <code>ServiceMeshControlPlane</code> resource.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>There are two ways to add a namespace to the mesh. You can either add the namespace by specifying its name in the <code>spec.members</code> list, or configure a set of namespace label selectors to include or exclude namespaces based on their labels.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Regardless of how members are specified in the <code>ServiceMeshMemberRoll</code> resource, you can also add members to the mesh by creating the <code>ServiceMeshMember</code> resource in each namespace.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="ossm-validate-control-plane-kiali_ossm-create-smcp"><a class="anchor" href="#ossm-validate-control-plane-kiali_ossm-create-smcp"></a>Validating your SMCP installation with Kiali</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -3103,7 +3352,7 @@ basic   10/10   ComponentsReady   ["default"]   2.1.1     66m</span></code></pre
   <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
   <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.3</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span>
   <span class="na">security</span><span class="pi">:</span>
     <span class="na">identity</span><span class="pi">:</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">ThirdParty</span>  <span class="c1">#required setting for ROSA</span>

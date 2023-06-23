@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2738,7 +2743,7 @@ operating system, run the following command:</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/container-native-virtualization/cnv-must-gather-rhel9:v4.13.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/container-native-virtualization/cnv-must-gather-rhel9:v&lt;installed_version_virt&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for OpenShift Virtualization.</p></td>
 </tr>
 <tr>
@@ -2746,15 +2751,15 @@ operating system, run the following command:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for OpenShift Serverless.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-service-mesh/istio-must-gather-rhel8:2.3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-service-mesh/istio-must-gather-rhel8:v&lt;installed_version_service_mesh&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for Red Hat OpenShift Service Mesh.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/rhmtc/openshift-migration-must-gather-rhel8:v1.7</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/rhmtc/openshift-migration-must-gather-rhel8:v&lt;installed_version_migration_toolkit&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for the Migration Toolkit for Containers.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/odf4/ocs-must-gather-rhel8:v4.9</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/odf4/ocs-must-gather-rhel8:v&lt;installed_version_ODF&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for Red Hat OpenShift Data Foundation.</p></td>
 </tr>
 <tr>
@@ -2770,7 +2775,7 @@ operating system, run the following command:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for Local Storage Operator.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-sandboxed-containers/osc-must-gather-rhel8:1.3.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-sandboxed-containers/osc-must-gather-rhel8:v&lt;installed_version_sandboxed_containers&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for OpenShift sandboxed containers.</p></td>
 </tr>
 <tr>
@@ -2782,7 +2787,7 @@ operating system, run the following command:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for the Node Maintenance Operator (NMO).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-gitops-1/gitops-must-gather-rhel8:v1.9.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>registry.redhat.io/openshift-gitops-1/gitops-must-gather-rhel8:v&lt;installed_version_GitOps&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data collection for Red Hat OpenShift GitOps.</p></td>
 </tr>
 </tbody>
@@ -2794,15 +2799,8 @@ operating system, run the following command:</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>To collect the default <code>must-gather</code> data in addition to specific feature data, add the <code>--image-stream=openshift/must-gather</code> argument.</p>
-</li>
-<li>
-<p>For information on gathering data about the Custom Metrics Autoscaler, see the Additional resources section that follows.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>To determine the latest version for an OpenShift Container Platform component&#8217;s image, see the <a href="https://access.redhat.com/support/policy/updates/openshift">Red Hat OpenShift Container Platform Life Cycle Policy</a> web page on the Red Hat Customer Portal.</p>
 </div>
 </td>
 </tr>
@@ -2826,7 +2824,31 @@ operating system, run the following command:</p>
 <p>Navigate to the directory where you want to store the <code>must-gather</code> data.</p>
 </li>
 <li>
-<p>Run the <code>oc adm must-gather</code> command with one or more <code>--image</code> or <code>--image-stream</code> arguments. For example, the following command gathers both the default cluster data and information specific to OpenShift Virtualization:</p>
+<p>Run the <code>oc adm must-gather</code> command with one or more <code>--image</code> or <code>--image-stream</code> arguments.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>To collect the default <code>must-gather</code> data in addition to specific feature data, add the <code>--image-stream=openshift/must-gather</code> argument.</p>
+</li>
+<li>
+<p>For information on gathering data about the Custom Metrics Autoscaler, see the Additional resources section that follows.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For example, the following command gathers both the default cluster data and information specific to OpenShift Virtualization:</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc adm must-gather <span class="se">\</span>
@@ -3058,6 +3080,9 @@ actual directory name.</td>
 <ul>
 <li>
 <p><a href="../nodes/cma/nodes-cma-autoscaling-custom.html#nodes-cma-autoscaling-custom-gather">Gathering debugging data</a> for the Custom Metrics Autoscaler.</p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/support/policy/updates/openshift">Red Hat OpenShift Container Platform Life Cycle Policy</a></p>
 </li>
 </ul>
 </div>

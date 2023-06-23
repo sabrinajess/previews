@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2486,6 +2491,12 @@
 <li><a href="#ossm-cert-cleanup_ossm-security">Removing the certificates</a></li>
 </ul>
 </li>
+<li><a href="#ossm-cert-manager-integration-istio_ossm-security">About integrating Service Mesh with cert-manager and istio-csr</a>
+<ul class="sectlevel2">
+<li><a href="#ossm-cert-manager-installation_ossm-security">Installing cert-manager</a></li>
+</ul>
+</li>
+<li><a href="#additional-resources_cert-manager-operator-red-hat-openshift">Additional resources</a></li>
 </ul>
 </div>
 <div class="paragraph">
@@ -2522,7 +2533,7 @@
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v2</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshControlPlane</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.3</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span>
   <span class="na">security</span><span class="pi">:</span>
     <span class="na">dataPlane</span><span class="pi">:</span>
       <span class="na">mtls</span><span class="pi">:</span> <span class="no">true</span></code></pre>
@@ -3141,7 +3152,7 @@
 <p>Install Red Hat OpenShift Service Mesh with mutual TLS enabled to configure certificates.</p>
 </li>
 <li>
-<p>This example uses the certificates from the <a href="https://github.com/maistra/istio/tree/maistra-2.3/samples/certs">Maistra repository</a>. For production, use your own certificates from your certificate authority.</p>
+<p>This example uses the certificates from the <a href="https://github.com/maistra/istio/tree/maistra-2.4/samples/certs">Maistra repository</a>. For production, use your own certificates from your certificate authority.</p>
 </li>
 <li>
 <p>Deploy the Bookinfo sample application to verify the results with these instructions.</p>
@@ -3159,7 +3170,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Save the example certificates from the <a href="https://github.com/maistra/istio/tree/maistra-2.3/samples/certs">Maistra repository</a> locally and replace <code>&lt;path&gt;</code> with the path to your certificates.</p>
+<p>Save the example certificates from the <a href="https://github.com/maistra/istio/tree/maistra-2.4/samples/certs">Maistra repository</a> locally and replace <code>&lt;path&gt;</code> with the path to your certificates.</p>
 </li>
 <li>
 <p>Create a secret named <code>cacert</code> that includes the input files <code>ca-cert.pem</code>, <code>ca-key.pem</code>, <code>root-cert.pem</code> and <code>cert-chain.pem</code>.</p>
@@ -3236,7 +3247,7 @@ pod "reviews-v3-79d7549c7-c2gjs" deleted</span></code></pre>
 <div class="sect2">
 <h3 id="ossm-cert-manage-verify-cert_ossm-security"><a class="anchor" href="#ossm-cert-manage-verify-cert_ossm-security"></a>Verifying your certificates</h3>
 <div class="paragraph">
-<p>Use the Bookinfo sample application to verify that the workload certificates are signed by the certificates that were plugged into the CA. This requires you have <code>openssl</code> installed on your machine</p>
+<p>Use the Bookinfo sample application to verify that the workload certificates are signed by the certificates that were plugged into the CA. This process requires that you have <code>openssl</code> installed on your machine.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -3355,6 +3366,370 @@ pod "reviews-v3-79d7549c7-c2gjs" deleted</span></code></pre>
 </li>
 </ol>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ossm-cert-manager-integration-istio_ossm-security"><a class="anchor" href="#ossm-cert-manager-integration-istio_ossm-security"></a>About integrating Service Mesh with cert-manager and istio-csr</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The cert-manager tool is a solution for X.509 certificate management on Kubernetes. It delivers a unified API to integrate applications with private or public key infrastructure (PKI), such as Vault, Google Cloud Certificate Authority Service, Let&#8217;s Encrypt, and other providers.</p>
+</div>
+<div class="paragraph">
+<p>The cert-manager tool ensures the certificates are valid and up-to-date by attempting to renew certificates at a configured time before they expire.</p>
+</div>
+<div class="paragraph">
+<p>For Istio users, cert-manager also provides integration with <code>istio-csr</code>, which is a certificate authority (CA) server that handles certificate signing requests (CSR) from Istio proxies. The server then delegates signing to cert-manager, which forwards CSRs to the configured CA server.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Red Hat provides support for integrating with <code>istio-csr</code> and cert-manager. Red Hat does not provide direct support for the <code>istio-csr</code> or the community cert-manager components. The use of community cert-manager shown here is for demonstration purposes only.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>One of these versions of cert-manager:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>cert-manager Operator for Red Hat OpenShift 1.10 or later</p>
+</li>
+<li>
+<p>community cert-manager Operator 1.11 or later</p>
+</li>
+<li>
+<p>cert-manager 1.11 or later</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>OpenShift Service Mesh Operator 2.4 or later</p>
+</li>
+<li>
+<p><code>istio-csr</code> 0.6.0 or later</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To avoid creating config maps in all namespaces when the <code>istio-csr</code> server is installed with the <code>jetstack/cert-manager-istio-csr</code> Helm chart, use the following setting: <code>app.controller.configmapNamespaceSelector: "maistra.io/member-of: &lt;istio-namespace&gt;"</code> in the <code>istio-csr.yaml</code> file.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="ossm-cert-manager-installation_ossm-security"><a class="anchor" href="#ossm-cert-manager-installation_ossm-security"></a>Installing cert-manager</h3>
+<div class="paragraph">
+<p>To install cert-manager, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Create the root cluster issuer:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-f</span> cluster-issuer.yaml</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-n</span> istio-system <span class="nt">-f</span> istio-ca.yaml</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example <code>cluster-issuer.yaml</code></div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">cert-manager.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Issuer</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">selfsigned-root-issuer</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">cert-manager</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">selfSigned</span><span class="pi">:</span> <span class="pi">{}</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">cert-manager.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Certificate</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">root-ca</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">cert-manager</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">isCA</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">duration</span><span class="pi">:</span> <span class="s">21600h</span> <span class="c1"># 900d</span>
+  <span class="na">secretName</span><span class="pi">:</span> <span class="s">root-ca</span>
+  <span class="na">commonName</span><span class="pi">:</span> <span class="s">root-ca.my-company.net</span>
+  <span class="na">subject</span><span class="pi">:</span>
+    <span class="na">organizations</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">my-company.net</span>
+  <span class="na">issuerRef</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">selfsigned-root-issuer</span>
+    <span class="na">kind</span><span class="pi">:</span> <span class="s">Issuer</span>
+    <span class="na">group</span><span class="pi">:</span> <span class="s">cert-manager.io</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">cert-manager.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ClusterIssuer</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">root-ca</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ca</span><span class="pi">:</span>
+    <span class="na">secretName</span><span class="pi">:</span> <span class="s">root-ca</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example <code>istio-ca.yaml</code></div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">cert-manager.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Certificate</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">istio-ca</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">isCA</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">duration</span><span class="pi">:</span> <span class="s">21600h</span>
+  <span class="na">secretName</span><span class="pi">:</span> <span class="s">istio-ca</span>
+  <span class="na">commonName</span><span class="pi">:</span> <span class="s">istio-ca.my-company.net</span>
+  <span class="na">subject</span><span class="pi">:</span>
+    <span class="na">organizations</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">my-company.net</span>
+  <span class="na">issuerRef</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">root-ca</span>
+    <span class="na">kind</span><span class="pi">:</span> <span class="s">ClusterIssuer</span>
+    <span class="na">group</span><span class="pi">:</span> <span class="s">cert-manager.io</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">cert-manager.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Issuer</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">istio-ca</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ca</span><span class="pi">:</span>
+    <span class="na">secretName</span><span class="pi">:</span> <span class="s">istio-ca</span></code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The namespace of the <code>selfsigned-root-issuer</code> issuer and <code>root-ca</code> certificate is <code>cert-manager</code> because <code>root-ca</code> is a cluster issuer, so the cert-manager looks for a referenced secret in its own namespace. Its own namespace is <code>cert-manager</code> in the case of the cert-manager Operator for Red Hat OpenShift.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Install <code>istio-csr</code>:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>helm <span class="nb">install </span>istio-csr jetstack/cert-manager-istio-csr <span class="se">\</span>
+    <span class="nt">-n</span> istio-system <span class="se">\</span>
+    <span class="nt">-f</span> deploy/examples/cert-manager/istio-csr/istio-csr.yaml</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example <code>istio-csr.yaml</code></div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">replicaCount</span><span class="pi">:</span> <span class="m">2</span>
+
+<span class="na">image</span><span class="pi">:</span>
+  <span class="na">repository</span><span class="pi">:</span> <span class="s">quay.io/jetstack/cert-manager-istio-csr</span>
+  <span class="na">tag</span><span class="pi">:</span> <span class="s">v0.6.0</span>
+  <span class="na">pullSecretName</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+
+<span class="na">app</span><span class="pi">:</span>
+  <span class="na">certmanager</span><span class="pi">:</span>
+    <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+    <span class="na">issuer</span><span class="pi">:</span>
+      <span class="na">group</span><span class="pi">:</span> <span class="s">cert-manager.io</span>
+      <span class="na">kind</span><span class="pi">:</span> <span class="s">Issuer</span>
+      <span class="na">name</span><span class="pi">:</span> <span class="s">istio-ca</span>
+
+  <span class="na">controller</span><span class="pi">:</span>
+    <span class="na">configmapNamespaceSelector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">maistra.io/member-of=istio-system"</span>
+    <span class="na">leaderElectionNamespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+
+  <span class="na">istio</span><span class="pi">:</span>
+    <span class="na">namespace</span><span class="pi">:</span> <span class="s">istio-system</span>
+    <span class="na">revisions</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">basic"</span><span class="pi">]</span>
+
+  <span class="na">server</span><span class="pi">:</span>
+    <span class="na">maxCertificateDuration</span><span class="pi">:</span> <span class="s">5m</span>
+
+  <span class="na">tls</span><span class="pi">:</span>
+    <span class="na">certificateDNSNames</span><span class="pi">:</span>
+    <span class="c1"># This DNS name must be set in the SMCP spec.security.certificateAuthority.cert-manager.address</span>
+    <span class="pi">-</span> <span class="s">cert-manager-istio-csr.istio-system.svc</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Deploy SMCP:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-f</span> mesh.yaml <span class="nt">-n</span> istio-system</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example <code>mesh.yaml</code></div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v2</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshControlPlane</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">addons</span><span class="pi">:</span>
+    <span class="na">grafana</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">kiali</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">prometheus</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="no">false</span>
+  <span class="na">proxy</span><span class="pi">:</span>
+    <span class="na">accessLogging</span><span class="pi">:</span>
+      <span class="na">file</span><span class="pi">:</span>
+        <span class="na">name</span><span class="pi">:</span> <span class="s">/dev/stdout</span>
+  <span class="na">security</span><span class="pi">:</span>
+    <span class="na">certificateAuthority</span><span class="pi">:</span>
+      <span class="na">cert-manager</span><span class="pi">:</span>
+        <span class="na">address</span><span class="pi">:</span> <span class="s">cert-manager-istio-csr.istio-system.svc:443</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">cert-manager</span>
+    <span class="na">dataPlane</span><span class="pi">:</span>
+      <span class="na">mtls</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">identity</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">ThirdParty</span>
+  <span class="na">tracing</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">None</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">maistra.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">ServiceMeshMemberRoll</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">members</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">httpbin</span>
+  <span class="pi">-</span> <span class="s">sleep</span></code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>security.identity.type: ThirdParty</code> must be set when <code>security.certificateAuthority.type: cert-manager</code> is configured.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Verification</div>
+<p>To verify cert-manager is installed, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deploy the HTTP and <code>sleep</code> apps:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc new-project &lt;namespace&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-f</span> https://raw.githubusercontent.com/maistra/istio/maistra-2.4/samples/httpbin/httpbin.yaml</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-f</span> https://raw.githubusercontent.com/maistra/istio/maistra-2.4/samples/sleep/sleep.yaml</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify that <code>sleep</code> can access the <code>httpbin</code> service:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nb">exec</span> <span class="s2">"</span><span class="si">$(</span>oc get pod <span class="nt">-l</span> <span class="nv">app</span><span class="o">=</span><span class="nb">sleep</span> <span class="nt">-n</span> &lt;namespace&gt; <span class="se">\</span>
+   <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">={</span>.items..metadata.name<span class="o">}</span><span class="si">)</span><span class="s2">"</span> <span class="nt">-c</span> <span class="nb">sleep</span> <span class="nt">-n</span> &lt;namespace&gt; <span class="nt">--</span> <span class="se">\</span>
+   curl http://httpbin.&lt;namespace&gt;:8000/ip <span class="nt">-s</span> <span class="nt">-o</span> /dev/null <span class="se">\</span>
+   <span class="nt">-w</span> <span class="s2">"%{http_code}</span><span class="se">\n</span><span class="s2">"</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output:</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">200</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check mTLS traffic from the ingress gateway to the <code>httpbin</code> service:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-n</span> &lt;namespace&gt; <span class="nt">-f</span> https://raw.githubusercontent.com/maistra/istio/maistra-2.4/samples/httpbin/httpbin-gateway.yaml</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Get the <code>istio-ingressgateway</code> route:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">INGRESS_HOST=$</span><span class="o">(</span>oc <span class="nt">-n</span> istio-system get routes istio-ingressgateway <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">'{.spec.host}'</span><span class="o">)</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify mTLS traffic from the ingress gateway to the <code>httpbin</code> service:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-s</span> <span class="nt">-I</span> http://<span class="nv">$INGRESS_HOST</span>/headers <span class="nt">-o</span> /dev/null <span class="nt">-w</span> <span class="s2">"%{http_code}"</span> <span class="nt">-s</span></code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 _additional-resources">
+<h2 id="additional-resources_cert-manager-operator-red-hat-openshift"><a class="anchor" href="#additional-resources_cert-manager-operator-red-hat-openshift"></a>Additional resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For information about how to install the cert-manager Operator for OpenShift Container Platform, see:
+<a href="../../security/cert_manager_operator/cert-manager-operator-install.html">Installing the cert-manager Operator for Red Hat OpenShift</a>.</p>
 </div>
 </div>
 </div>

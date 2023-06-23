@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2735,12 +2740,7 @@ plugin:</p>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>bridge</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Specify the name of the virtual bridge to use. If the bridge interface does not exist on the host, it is created. The default value is <code>cni0</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">The name of the CNI plugin to configure: <code>bridge</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipam</code></p></td>
@@ -2748,47 +2748,105 @@ plugin:</p>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration object for the IPAM CNI plugin. The plugin manages IP address assignment for the attachment definition.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>bridge</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Specify the name of the virtual bridge to use. If the bridge interface does not exist on the host, it is created. The default value is <code>cni0</code>.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipMasq</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to enable IP masquerading for traffic that leaves the virtual network. The source IP address for all traffic is rewritten to the bridge&#8217;s IP address. If the bridge does not have an IP address, this setting has no effect. The default value is <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to enable IP masquerading for traffic that leaves the virtual network. The source IP address for all traffic is rewritten to the bridge&#8217;s IP address. If the bridge does not have an IP address, this setting has no effect. The default value is <code>false</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>isGateway</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to assign an IP address to the bridge. The default value is <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to assign an IP address to the bridge. The default value is <code>false</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>isDefaultGateway</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to configure the bridge as the default gateway for the virtual network. The default value is <code>false</code>. If <code>isDefaultGateway</code> is set to <code>true</code>, then <code>isGateway</code> is also set to <code>true</code> automatically.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to configure the bridge as the default gateway for the virtual network. The default value is <code>false</code>. If <code>isDefaultGateway</code> is set to <code>true</code>, then <code>isGateway</code> is also set to <code>true</code> automatically.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>forceAddress</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to allow assignment of a previously assigned IP address to the virtual bridge. When set to <code>false</code>, if an IPv4 address or an IPv6 address from overlapping subsets is assigned to the virtual bridge, an error occurs. The default value is <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to allow assignment of a previously assigned IP address to the virtual bridge. When set to <code>false</code>, if an IPv4 address or an IPv6 address from overlapping subsets is assigned to the virtual bridge, an error occurs. The default value is <code>false</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>hairpinMode</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to allow the virtual bridge to send an Ethernet frame back through the virtual port it was received on. This mode is also known as <em>reflective relay</em>. The default value is <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to allow the virtual bridge to send an Ethernet frame back through the virtual port it was received on. This mode is also known as <em>reflective relay</em>. The default value is <code>false</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>promiscMode</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set to <code>true</code> to enable promiscuous mode on the bridge. The default value is <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set to <code>true</code> to enable promiscuous mode on the bridge. The default value is <code>false</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>vlan</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Specify a virtual LAN (VLAN) tag as an integer value. By default, no VLAN tag is assigned.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Specify a virtual LAN (VLAN) tag as an integer value. By default, no VLAN tag is assigned.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>preserveDefaultVlan</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Indicates whether the default vlan must be preserved on the <code>veth</code> end connected to the bridge. Defaults to true.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>vlanTrunk</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>list</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Assign a VLAN trunk tag. The default value is <code>none</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>mtu</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set the maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set the maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>enabledad</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Enables duplicate address detection for the container side <code>veth</code>. The default value is <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>macspoofchk</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Enables mac spoof check, limiting the traffic originating from the container to the mac address of the interface. The default value is <code>false</code>.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The VLAN parameter configures the VLAN tag on the host end of the <code>veth</code> and also enables the <code>vlan_filtering</code> feature on the bridge interface.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To configure uplink for a L2 network you need to allow the vlan on the uplink interface by using the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w">  </span>bridge vlan add vid VLAN_ID dev DEV</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect3">
 <h4 id="nw-multus-bridge-config-example_configuring-additional-network"><a class="anchor" href="#nw-multus-bridge-config-example_configuring-additional-network"></a>bridge configuration example</h4>
 <div class="paragraph">
@@ -2798,7 +2856,7 @@ plugin:</p>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="json"><span class="p">{</span><span class="w">
   </span><span class="nl">"cniVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3.1"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work-network"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bridge-net"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bridge"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"isGateway"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
   </span><span class="nl">"vlan"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
@@ -2820,8 +2878,7 @@ plugin:</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Specify your network device by setting only one of the
-following parameters: <code>device</code>, <code>hwaddr</code>, <code>kernelpath</code>, or <code>pciBusID</code>.</p>
+<p>Specify your network device by setting only one of the following parameters: <code>device</code>,<code>hwaddr</code>, <code>kernelpath</code>, or <code>pciBusID</code>.</p>
 </div>
 </td>
 </tr>
@@ -2891,7 +2948,7 @@ following parameters: <code>device</code>, <code>hwaddr</code>, <code>kernelpath
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="json"><span class="p">{</span><span class="w">
   </span><span class="nl">"cniVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3.1"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work-network"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hostdev-net"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"host-device"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"device"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eth1"</span><span class="w">
 </span><span class="p">}</span></code></pre>
@@ -2902,8 +2959,7 @@ following parameters: <code>device</code>, <code>hwaddr</code>, <code>kernelpath
 <div class="sect2">
 <h3 id="nw-multus-ipvlan-object_configuring-additional-network"><a class="anchor" href="#nw-multus-ipvlan-object_configuring-additional-network"></a>Configuration for an IPVLAN additional network</h3>
 <div class="paragraph">
-<p>The following object describes the configuration parameters for the IPVLAN CNI
-plugin:</p>
+<p>The following object describes the configuration parameters for the IPVLAN CNI plugin:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. IPVLAN CNI plugin JSON configuration object</caption>
@@ -2936,28 +2992,51 @@ plugin:</p>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">The name of the CNI plugin to configure: <code>ipvlan</code>.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipam</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration object for the IPAM CNI plugin. The plugin manages IP address assignment for the attachment definition. This is required unless the plugin is chained.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>mode</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The operating mode for the virtual network. The value must be <code>l2</code>, <code>l3</code>, or <code>l3s</code>. The default value is <code>l2</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: The operating mode for the virtual network. The value must be <code>l2</code>, <code>l3</code>, or <code>l3s</code>. The default value is <code>l2</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>master</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The Ethernet interface to associate with the network attachment. If a <code>master</code> is not specified, the interface for the default network route is used.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: The Ethernet interface to associate with the network attachment. If a <code>master</code> is not specified, the interface for the default network route is used.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>mtu</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>integer</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Set the maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipam</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>object</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration object for the IPAM CNI plugin. The plugin manages IP address assignment for the attachment definition.</p>
-<p class="tableblock">Do not specify <code>dhcp</code>. Configuring IPVLAN with DHCP is not supported because IPVLAN interfaces share the MAC address with the host interface.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Set the maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>ipvlan</code> object does not allow virtual interfaces to communicate with the <code>master</code> interface. Therefore the container will not be able to reach the host by using the <code>ipvlan</code> interface. Be sure that the container joins a network that provides connectivity to the host, such as a network supporting the Precision Time Protocol (<code>PTP</code>).</p>
+</li>
+<li>
+<p>A single <code>master</code> interface cannot simultaneously be configured to use both <code>macvlan</code> and <code>ipvlan</code>.</p>
+</li>
+<li>
+<p>For IP allocation schemes that cannot be interface agnostic, the <code>ipvlan</code> plugin can be chained with an earlier plugin that handles this logic. If the <code>master</code> is omitted, then the previous result must contain a single interface name for the <code>ipvlan</code> plugin to enslave. If <code>ipam</code> is omitted, then the previous result is used to configure the <code>ipvlan</code> interface.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect3">
 <h4 id="nw-multus-ipvlan-config-example_configuring-additional-network"><a class="anchor" href="#nw-multus-ipvlan-config-example_configuring-additional-network"></a>ipvlan configuration example</h4>
 <div class="paragraph">
@@ -2967,7 +3046,7 @@ plugin:</p>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="json"><span class="p">{</span><span class="w">
   </span><span class="nl">"cniVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3.1"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work-network"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipvlan-net"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipvlan"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"master"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eth1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"l3"</span><span class="p">,</span><span class="w">
@@ -2987,8 +3066,7 @@ plugin:</p>
 <div class="sect2">
 <h3 id="nw-multus-macvlan-object_configuring-additional-network"><a class="anchor" href="#nw-multus-macvlan-object_configuring-additional-network"></a>Configuration for a MACVLAN additional network</h3>
 <div class="paragraph">
-<p>The following object describes the configuration parameters for the macvlan CNI
-plugin:</p>
+<p>The following object describes the configuration parameters for the macvlan CNI plugin:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 5. MACVLAN CNI plugin JSON configuration object</caption>
@@ -3021,24 +3099,24 @@ plugin:</p>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">The name of the CNI plugin to configure: <code>macvlan</code>.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipam</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration object for the IPAM CNI plugin. The plugin manages IP address assignment for the attachment definition.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>mode</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Configures traffic visibility on the virtual network. Must be either <code>bridge</code>, <code>passthru</code>, <code>private</code>, or <code>vepa</code>. If a value is not provided, the default value is <code>bridge</code>.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: Configures traffic visibility on the virtual network. Must be either <code>bridge</code>, <code>passthru</code>, <code>private</code>, or <code>vepa</code>. If a value is not provided, the default value is <code>bridge</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>master</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The host network interface, such as a network interface, bond, or bond with VLAN, to associate with the newly created macvlan interface. If a value is not specified, then the default route interface is used.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: The host network interface to associate with the newly created macvlan interface. If a value is not specified, then the default route interface is used.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>mtu</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>ipam</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>object</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration object for the IPAM CNI plugin. The plugin manages IP address assignment for the attachment definition.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Optional: The maximum transmission unit (MTU) to the specified value. The default value is automatically set by the kernel.</p></td>
 </tr>
 </tbody>
 </table>

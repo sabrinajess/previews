@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2468,6 +2473,7 @@
 <li><a href="#op-installing-pipelines-operator-in-web-console_installing-pipelines">Installing the Red Hat OpenShift Pipelines Operator in web console</a></li>
 <li><a href="#op-installing-pipelines-operator-using-the-cli_installing-pipelines">Installing the OpenShift Pipelines Operator using the CLI</a></li>
 <li><a href="#op-pipelines-operator-in-restricted-environment_installing-pipelines">Red Hat OpenShift Pipelines Operator in a restricted environment</a></li>
+<li><a href="#op-performance-tuning-using-tektonconfig-cr_installing-pipelines">Performance tuning using TektonConfig CR</a></li>
 <li><a href="#additional-resources">Additional resources</a></li>
 </ul>
 </div>
@@ -2521,7 +2527,7 @@
 </table>
 </div>
 <div class="paragraph">
-<p>The Red Hat OpenShift Pipelines Operator now provides the option to choose the components that you want to install by specifying profiles as part of the <code>TektonConfig</code> CR. The <code>TektonConfig</code> CR is automatically installed when the Operator is installed.
+<p>The Red Hat OpenShift Pipelines Operator now provides the option to choose the components that you want to install by specifying profiles as part of the <code>TektonConfig</code> custom resource (CR). The <code>TektonConfig</code> CR is automatically installed when the Operator is installed.
 The supported profiles are:</p>
 </div>
 <div class="ulist">
@@ -2530,10 +2536,10 @@ The supported profiles are:</p>
 <p>Lite: This installs only Tekton Pipelines.</p>
 </li>
 <li>
-<p>Basic: This installs Tekton Pipelines and Tekton Triggers.</p>
+<p>Basic: This installs Tekton Pipelines, Tekton Triggers, and Tekton Chains.</p>
 </li>
 <li>
-<p>All: This is the default profile used when the <code>TektonConfig</code> CR is installed. This profile installs all of the Tekton components: Tekton Pipelines, Tekton Triggers, Tekton Addons (which include <code>ClusterTasks</code>, <code>ClusterTriggerBindings</code>, <code>ConsoleCLIDownload</code>, <code>ConsoleQuickStart</code> and <code>ConsoleYAMLSample</code> resources).</p>
+<p>All: This is the default profile used when the <code>TektonConfig</code> CR is installed. This profile installs all of the Tekton components, including Tekton Pipelines, Tekton Triggers, Tekton Chains, Pipelines as Code, and Tekton Addons. Tekton Addons includes the <code>ClusterTasks</code>, <code>ClusterTriggerBindings</code>, <code>ConsoleCLIDownload</code>, <code>ConsoleQuickStart</code>, and <code>ConsoleYAMLSample</code> resources.</p>
 </li>
 </ul>
 </div>
@@ -2634,7 +2640,7 @@ The supported profiles are:</p>
 <div class="title">Example output</div>
 <div class="content">
 <pre class="nowrap">NAME     VERSION   READY   REASON
-config   1.9.2     True</pre>
+config   1.11.0     True</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2645,20 +2651,26 @@ config   1.9.2     True</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get tektonpipeline,tektontrigger,tektonaddon,pac</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get tektonpipeline,tektontrigger,tektonchain,tektonaddon,pac</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Example output</div>
 <div class="content">
 <pre class="nowrap">NAME                                          VERSION   READY   REASON
-tektonpipeline.operator.tekton.dev/pipeline   v0.41.1   True
+tektonpipeline.operator.tekton.dev/pipeline   v0.47.0   True
+
 NAME                                        VERSION   READY   REASON
-tektontrigger.operator.tekton.dev/trigger   v0.22.2   True
+tektontrigger.operator.tekton.dev/trigger   v0.23.1   True
+
 NAME                                    VERSION   READY   REASON
-tektonaddon.operator.tekton.dev/addon   1.9.2     True
+tektonchain.operator.tekton.dev/chain   v0.16.0   True
+
+NAME                                    VERSION   READY   REASON
+tektonaddon.operator.tekton.dev/addon   1.11.0     True
+
 NAME                                                             VERSION   READY   REASON
-openshiftpipelinesascode.operator.tekton.dev/pipelines-as-code   v0.15.5   True</pre>
+openshiftpipelinesascode.operator.tekton.dev/pipelines-as-code   v0.19.0   True</pre>
 </div>
 </div>
 </li>
@@ -2740,6 +2752,127 @@ for example, <code>sub.yaml</code>:</p>
 </div>
 <div class="paragraph">
 <p>By default, the proxy webhook is disabled for the <code>openshift-pipelines</code> namespace. To disable it for any other namespace, you can add the <code>operator.tekton.dev/disable-proxy: true</code> label to the <code>namespace</code> object.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="op-performance-tuning-using-tektonconfig-cr_installing-pipelines"><a class="anchor" href="#op-performance-tuning-using-tektonconfig-cr_installing-pipelines"></a>Performance tuning using TektonConfig CR</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can modify the fields under the <code>.spec.pipeline.performance</code> parameter in the <code>TektonConfig</code> custom resource (CR) to change high availability (HA) support and performance configuration for the OpenShift Pipelines controller.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example TektonConfig performance fields</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">pipeline</span><span class="pi">:</span>
+    <span class="na">performance</span><span class="pi">:</span>
+      <span class="na">disable-ha</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">buckets</span><span class="pi">:</span> <span class="m">1</span>
+      <span class="na">threads-per-controller</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">kube-api-qps</span><span class="pi">:</span> <span class="m">5.0</span>
+      <span class="na">kube-api-burst</span><span class="pi">:</span> <span class="s">10</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The fields are optional. If you set them, the Red Hat OpenShift Pipelines Operator includes most of the fields as arguments in the <code>openshift-pipelines-controller</code> deployment under the <code>openshift-pipelines-controller</code> container. The OpenShift Pipelines Operator also updates the <code>buckets</code> field in the <code>config-leader-election</code> configuration map under the <code>openshift-pipelines</code> namespace.</p>
+</div>
+<div class="paragraph">
+<p>If you do not specify the values, the OpenShift Pipelines Operator does not update those fields and applies the default values for the OpenShift Pipelines controller.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you modify or remove any of the performance fields, the OpenShift Pipelines Operator updates the <code>openshift-pipelines-controller</code> deployment and the <code>config-leader-election</code> configuration map (if the <code>buckets</code> field changed) and re-creates <code>openshift-pipelines-controller</code> pods.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Modifiable fields for tuning OpenShift Pipelines performance</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default value for the OpenShift Pipelines controller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>disable-ha</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable or disable the high availability (HA) support. By default, the HA support is enabled.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>buckets</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of buckets used to partition the key space for each reconciler.</p>
+<p class="tableblock">Each of the replicas uses these buckets. The instance that owns a bucket reconciles the keys partitioned into that bucket. The maximum value is <code>10</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>threads-per-controller</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of threads (workers) to use when the work queue of the OpenShift Pipelines controller is processed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>kube-api-qps</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum queries per second (QPS) to the cluster master from the REST client.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>5.0</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>kube-api-burst</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum burst for a throttle.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The OpenShift Pipelines Operator does not control the number of replicas of the OpenShift Pipelines controller. The <code>replicas</code> setting of the deployment determines the number of replicas. For example, to change the number of replicas to 3, enter the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nt">--namespace</span> openshift-pipelines scale deployment openshift-pipelines-controller <span class="nt">--replicas</span><span class="o">=</span>3</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>kube-api-qps</code> and <code>kube-api-burst</code> fields are multiplied by 2 in the OpenShift Pipelines controller. For example, if the <code>kube-api-qps</code> and <code>kube-api-burst</code> values are <code>10</code>, the actual QPS and burst values become <code>20</code>.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>

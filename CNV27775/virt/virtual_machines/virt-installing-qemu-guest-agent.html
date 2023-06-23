@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2465,7 +2470,7 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
-<li><a href="#installing-the-qemu-guest-agent">Installing the QEMU guest agent</a>
+<li><a href="#installing-qemu-guest-agent">Installing the QEMU guest agent</a>
 <ul class="sectlevel2">
 <li><a href="#virt-installing-qemu-guest-agent-on-linux-vm_virt-installing-qemu-guest-agent">Installing QEMU guest agent on a Linux virtual machine</a></li>
 <li><a href="#installing-qemu-guest-agent-on-windows-vm_virt-installing-qemu-guest-agent">Installing QEMU guest agent on a Windows virtual machine</a></li>
@@ -2480,6 +2485,11 @@
 <li><a href="#virt-adding-virtio-drivers-vm-yaml_virt-installing-qemu-guest-agent">Adding VirtIO drivers container disk to a virtual machine</a></li>
 </ul>
 </li>
+<li><a href="#updating-virtio-drivers">Updating VirtIO drivers</a>
+<ul class="sectlevel2">
+<li><a href="#virt-updating-virtio-drivers-windows_virt-installing-qemu-guest-agent">Updating VirtIO drivers on a Windows guest</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -2488,7 +2498,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="installing-the-qemu-guest-agent"><a class="anchor" href="#installing-the-qemu-guest-agent"></a>Installing the QEMU guest agent</h2>
+<h2 id="installing-qemu-guest-agent"><a class="anchor" href="#installing-qemu-guest-agent"></a>Installing the QEMU guest agent</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="virt-installing-qemu-guest-agent-on-linux-vm_virt-installing-qemu-guest-agent"><a class="anchor" href="#virt-installing-qemu-guest-agent-on-linux-vm_virt-installing-qemu-guest-agent"></a>Installing QEMU guest agent on a Linux virtual machine</h3>
@@ -2885,6 +2895,59 @@ to take effect.</p>
 <div class="paragraph">
 <p>After the virtual machine has started, the VirtIO drivers can be installed from
 the attached SATA CD drive.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="updating-virtio-drivers"><a class="anchor" href="#updating-virtio-drivers"></a>Updating VirtIO drivers</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="virt-updating-virtio-drivers-windows_virt-installing-qemu-guest-agent"><a class="anchor" href="#virt-updating-virtio-drivers-windows_virt-installing-qemu-guest-agent"></a>Updating VirtIO drivers on a Windows guest</h3>
+<div class="paragraph">
+<p>Update the <code>virtio</code> drivers by using Windows Update.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>A Windows guest operating system with the <code>virtio</code> drivers must be attached to the virtual machine (VM).</p>
+</li>
+<li>
+<p>The cluster must be connected to the internet. Disconnected clusters cannot reach the Windows Update service.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Windows Guest operating system, use the <code>File Explorer</code> to navigate to <strong>Settings</strong> &#8594; <strong>Windows Update</strong> &#8594; <strong>Advanced Options</strong> &#8594; <strong>Optional Updates</strong>.</p>
+</li>
+<li>
+<p>Install all updates from <strong>Red Hat, Inc.</strong>.</p>
+</li>
+<li>
+<p>Reboot the VM.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Verification</div>
+<ol class="arabic">
+<li>
+<p>On the Windows VM, navigate to the <strong>Device Manager</strong>.</p>
+</li>
+<li>
+<p>Select a device.</p>
+</li>
+<li>
+<p>Select the <strong>Driver</strong> tab.</p>
+</li>
+<li>
+<p>Click <strong>Driver Details</strong> and confirm that the <code>virtio</code> driver details list the correct version.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>

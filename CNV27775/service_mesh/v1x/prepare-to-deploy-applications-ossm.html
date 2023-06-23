@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2868,7 +2873,7 @@
 <h2 id="ossm-tutorial-bookinfo-overview_deploying-applications-ossm-v1x"><a class="anchor" href="#ossm-tutorial-bookinfo-overview_deploying-applications-ossm-v1x"></a>Bookinfo example application</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Bookinfo example application allows you to test your Red Hat OpenShift Service Mesh 2.3.3 installation on OpenShift Container Platform.</p>
+<p>The Bookinfo example application allows you to test your Red Hat OpenShift Service Mesh 2.4 installation on OpenShift Container Platform.</p>
 </div>
 <div class="paragraph">
 <p>The Bookinfo application displays information about a book, similar to a single catalog entry of an online book store. The application displays a page that describes the book, book details (ISBN, number of pages, and other information), and book reviews.</p>
@@ -2920,7 +2925,7 @@
 <p>OpenShift Container Platform 4.1 or higher installed.</p>
 </li>
 <li>
-<p>Red Hat OpenShift Service Mesh 2.3.3 installed.</p>
+<p>Red Hat OpenShift Service Mesh 2.4 installed.</p>
 </li>
 <li>
 <p>Access to the OpenShift CLI (<code>oc</code>).</p>
@@ -3061,7 +3066,7 @@ default   1/1     Configured   70s   ["bookinfo"]</span></code></pre>
 <p>From the CLI, deploy the Bookinfo application in the <em>`bookinfo`</em> project by applying the <code>bookinfo.yaml</code> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/platform/kube/bookinfo.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/platform/kube/bookinfo.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3090,7 +3095,7 @@ deployment.apps/productpage-v1 created</span></code></pre>
 <p>Create the ingress gateway by applying the <code>bookinfo-gateway.yaml</code> file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/bookinfo-gateway.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/bookinfo-gateway.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3130,7 +3135,7 @@ virtualservice.networking.istio.io/bookinfo created</span></code></pre>
 <p>If you did not enable mutual TLS:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/destination-rule-all.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/destination-rule-all.yaml</code></pre>
 </div>
 </div>
 </li>
@@ -3138,7 +3143,7 @@ virtualservice.networking.istio.io/bookinfo created</span></code></pre>
 <p>If you enabled mutual TLS:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.3/samples/bookinfo/networking/destination-rule-all-mtls.yaml</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="bash">$ oc apply -n bookinfo -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.4/samples/bookinfo/networking/destination-rule-all-mtls.yaml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3289,7 +3294,7 @@ reviews-v3-6dfd49b55b-vcwpf       2/2     Running   0          12m</span></code>
 <p>OpenShift Container Platform 4.1 or higher installed.</p>
 </li>
 <li>
-<p>Red Hat OpenShift Service Mesh 2.3.3 installed.</p>
+<p>Red Hat OpenShift Service Mesh 2.4 installed.</p>
 </li>
 <li>
 <p>Access to the OpenShift CLI (<code>oc</code>).</p>
@@ -3388,7 +3393,7 @@ reviews-v3-6dfd49b55b-vcwpf       2/2     Running   0          12m</span></code>
 <p>OpenShift Container Platform 4.1 or higher installed.</p>
 </li>
 <li>
-<p>Red Hat OpenShift Service Mesh 2.3.3 installed.</p>
+<p>Red Hat OpenShift Service Mesh 2.4 installed.</p>
 </li>
 <li>
 <p>Jaeger enabled during the installation.</p>

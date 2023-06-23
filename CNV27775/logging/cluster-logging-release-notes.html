@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2465,6 +2470,12 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
+<li><a href="#cluster-logging-release-notes-5-7-2_cluster-logging-release-notes-v5x">Logging 5.7.2</a>
+<ul class="sectlevel2">
+<li><a href="#openshift-logging-5-7-2-bug-fixes_cluster-logging-release-notes-v5x">Bug fixes</a></li>
+<li><a href="#openshift-logging-5-7-2-CVEs_cluster-logging-release-notes-v5x">CVEs</a></li>
+</ul>
+</li>
 <li><a href="#logging-release-notes-5-7-1_cluster-logging-release-notes-v5x">Logging 5.7.1</a>
 <ul class="sectlevel2">
 <li><a href="#logging-5-7-1-bug-fixes_cluster-logging-release-notes-v5x">Bug fixes</a></li>
@@ -2882,6 +2893,261 @@
 </td>
 </tr>
 </table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cluster-logging-release-notes-5-7-2_cluster-logging-release-notes-v5x"><a class="anchor" href="#cluster-logging-release-notes-5-7-2_cluster-logging-release-notes-v5x"></a>Logging 5.7.2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This release includes <a href="https://access.redhat.com/errata/RHSA-2023:3495">OpenShift Logging Bug Fix Release 5.7.2</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="openshift-logging-5-7-2-bug-fixes_cluster-logging-release-notes-v5x"><a class="anchor" href="#openshift-logging-5-7-2-bug-fixes_cluster-logging-release-notes-v5x"></a>Bug fixes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Before this update, it was not possible to delete the <code>openshift-logging</code> namespace directly due to the presence of a pending finalizer. With this update, the finalizer is no longer utilized, enabling direct deletion of the namespace. (<a href="https://issues.redhat.com/browse/LOG-3316">LOG-3316</a>)</p>
+</li>
+<li>
+<p>Before this update, the <code>run.sh</code> script would display an incorrect <code>chunk_limit_size</code> value if it was changed according to the OpenShift Container Platform documentation. However, when setting the <code>chunk_limit_size</code> via the environment variable <code>$BUFFER_SIZE_LIMIT</code>, the script would show the correct value. With this update, the <code>run.sh</code> script now consistently displays the correct <code>chunk_limit_size</code> value in both scenarios. (<a href="https://issues.redhat.com/browse/LOG-3330">LOG-3330</a>)</p>
+</li>
+<li>
+<p>Before this update, the OpenShift Container Platform web console&#8217;s logging view plugin did not allow for custom node placement or tolerations. This update adds the ability to define node placement and tolerations for the logging view plugin. (<a href="https://issues.redhat.com/browse/LOG-3749">LOG-3749</a>)</p>
+</li>
+<li>
+<p>Before this update, the Cluster Logging Operator encountered an Unsupported Media Type exception when trying to send logs to DataDog via the Fluentd HTTP Plugin. With this update, users can seamlessly assign the content type for log forwarding by configuring the HTTP header Content-Type. The value provided is automatically assigned to the <code>content_type</code> parameter within the plugin, ensuring successful log transmission. (<a href="https://issues.redhat.com/browse/LOG-3784">LOG-3784</a>)</p>
+</li>
+<li>
+<p>Before this update, when the <code>detectMultilineErrors</code> field was set to <code>true</code> in the <code>ClusterLogForwarder</code> custom resource (CR), PHP multi-line errors were recorded as separate log entries, causing the stack trace to be split across multiple messages. With this update, multi-line error detection for PHP is enabled, ensuring that the entire stack trace is included in a single log message. (<a href="https://issues.redhat.com/browse/LOG-3878">LOG-3878</a>)</p>
+</li>
+<li>
+<p>Before this update, <code>ClusterLogForwarder</code> pipelines containing a space in their name caused the Vector collector pods to continuously crash. With this update, all spaces, dashes (-), and dots (.) in pipeline names are replaced with underscores (_). (<a href="https://issues.redhat.com/browse/LOG-3945">LOG-3945</a>)</p>
+</li>
+<li>
+<p>Before this update, the <code>log_forwarder_output</code> metric did not include the <code>http</code> parameter. This update adds the missing parameter to the metric. (<a href="https://issues.redhat.com/browse/LOG-3997">LOG-3997</a>)</p>
+</li>
+<li>
+<p>Before this update, Fluentd did not identify some multi-line JavaScript client exceptions when they ended with a colon. With this update, the Fluentd buffer name is prefixed with an underscore, resolving the issue. (<a href="https://issues.redhat.com/browse/LOG-4019">LOG-4019</a>)</p>
+</li>
+<li>
+<p>Before this update, when configuring log forwarding to write to a Kafka output topic which matched a key in the payload, logs dropped due to an error.  With this update, Fluentd&#8217;s buffer name has been prefixed with an underscore, resolving the issue.(<a href="https://issues.redhat.com/browse/LOG-4027">LOG-4027</a>)</p>
+</li>
+<li>
+<p>Before this update, the LokiStack gateway returned label values for namespaces without applying the access rights of a user. With this update, the LokiStack gateway applies permissions to label value requests, resolving the issue. (<a href="https://issues.redhat.com/browse/LOG-4049">LOG-4049</a>)</p>
+</li>
+<li>
+<p>Before this update, the Cluster Logging Operator API required a certificate to be provided by a secret when the <code>tls.insecureSkipVerify</code> option was set to <code>true</code>. With this update, the Cluster Logging Operator API no longer requires a certificate to be provided by a secret in such cases. The following configuration has been added to the Operator&#8217;s CR:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="s">tls.verify_certificate = </span><span class="no">false</span>
+<span class="s">tls.verify_hostname = </span><span class="no">false</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(<a href="https://issues.redhat.com/browse/LOG-3445">LOG-3445</a>)</p>
+</div>
+</li>
+<li>
+<p>Before this update, the LokiStack route configuration caused queries running longer than 30 seconds to timeout. With this update, the LokiStack global and per-tenant <code>queryTimeout</code> settings affect the route timeout settings, resolving the issue. (<a href="https://issues.redhat.com/browse/LOG-4052">LOG-4052</a>)</p>
+</li>
+<li>
+<p>Before this update, a prior fix to remove defaulting of the <code>collection.type</code> resulted in the Operator no longer honoring the deprecated specs for resource, node selections, and tolerations.  This update modifies the Operator behavior to always prefer the <code>collection.logs</code> spec over those of <code>collection</code>.  This varies from previous behavior that allowed using both the preferred fields and deprecated fields but would ignore the deprecated fields when <code>collection.type</code> was populated. (<a href="https://issues.redhat.com/browse/LOG-4185">LOG-4185</a>)</p>
+</li>
+<li>
+<p>Before this update, the Vector log collector did not generate TLS configuration for forwarding logs to multiple Kafka brokers if the broker URLs were not specified in the output. With this update, TLS configuration is generated appropriately for multiple brokers. (<a href="https://issues.redhat.com/browse/LOG-4163">LOG-4163</a>)</p>
+</li>
+<li>
+<p>Before this update, the option to enable passphrase for log forwarding to Kafka was unavailable. This limitation presented a security risk as it could potentially expose sensitive information. With this update, users now have a seamless option to enable passphrase for log forwarding to Kafka. (<a href="https://issues.redhat.com/browse/LOG-3314">LOG-3314</a>)</p>
+</li>
+<li>
+<p>Before this update, Vector log collector did not honor the <code>tlsSecurityProfile</code> settings for outgoing TLS connections. After this update, Vector handles TLS connection settings appropriately. (<a href="https://issues.redhat.com/browse/LOG-4011">LOG-4011</a>)</p>
+</li>
+<li>
+<p>Before this update, not all available output types were included in the <code>log_forwarder_output_info</code> metrics. With this update, metrics contain Splunk and Google Cloud Logging data which was missing previously. (<a href="https://issues.redhat.com/browse/LOG-4098">LOG-4098</a>)</p>
+</li>
+<li>
+<p>Before this update, when <code>follow_inodes</code> was set to <code>true</code>, the Fluentd collector could crash on file rotation. With this update, the <code>follow_inodes</code> setting does not crash the collector. (<a href="https://issues.redhat.com/browse/LOG-4151">LOG-4151</a>)</p>
+</li>
+<li>
+<p>Before this update, the Fluentd collector could incorrectly close files that should be watched because of how those files were tracked. With this update, the tracking parameters have been corrected.  (<a href="https://issues.redhat.com/browse/LOG-4149">LOG-4149</a>)</p>
+</li>
+<li>
+<p>Before this update, forwarding logs with the Vector collector and naming a pipeline in the <code>ClusterLogForwarder</code> instance <code>audit</code>, <code>application</code> or <code>infrastructure</code> resulted in collector pods staying in the <code>CrashLoopBackOff</code> state with the following error in the collector log:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="text">ERROR vector::cli: Configuration error. error=redefinition of table transforms.audit for key transforms.audit</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After this update, pipeline names no longer clash with reserved input names, and pipelines can be named <code>audit</code>, <code>application</code> or <code>infrastructure</code>. (<a href="https://issues.redhat.com/browse/LOG-4218">LOG-4218</a>)</p>
+</div>
+</li>
+<li>
+<p>Before this update, when forwarding logs to a syslog destination with the Vector collector and setting the <code>addLogSource</code> flag to <code>true</code>, the following extra empty fields were added to the forwarded messages: <code>namespace_name=</code>, <code>container_name=</code>, and <code>pod_name=</code>. With this update, these fields are no longer added to journal logs. (<a href="https://issues.redhat.com/browse/">LOG-4219</a>)</p>
+</li>
+<li>
+<p>Before this update, when a <code>structuredTypeKey</code> was not found, and a <code>structuredTypeName</code> was not specified, log messages were still parsed into structured object. With this update, parsing of logs is as expected. (<a href="https://issues.redhat.com/browse/LOG-4220">LOG-4220</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="openshift-logging-5-7-2-CVEs_cluster-logging-release-notes-v5x"><a class="anchor" href="#openshift-logging-5-7-2-CVEs_cluster-logging-release-notes-v5x"></a>CVEs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2021-26341">CVE-2021-26341</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2021-33655">CVE-2021-33655</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2021-33656">CVE-2021-33656</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-1462">CVE-2022-1462</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-1679">CVE-2022-1679</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-1789">CVE-2022-1789</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-2196">CVE-2022-2196</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-2663">CVE-2022-2663</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3028">CVE-2022-3028</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3239">CVE-2022-3239</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3522">CVE-2022-3522</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3524">CVE-2022-3524</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3564">CVE-2022-3564</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3566">CVE-2022-3566</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3567">CVE-2022-3567</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3619">CVE-2022-3619</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3623">CVE-2022-3623</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3625">CVE-2022-3625</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3627">CVE-2022-3627</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3628">CVE-2022-3628</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3707">CVE-2022-3707</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-3970">CVE-2022-3970</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-4129">CVE-2022-4129</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-20141">CVE-2022-20141</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-25147">CVE-2022-25147</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-25265">CVE-2022-25265</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-30594">CVE-2022-30594</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-36227">CVE-2022-36227</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-39188">CVE-2022-39188</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-39189">CVE-2022-39189</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-41218">CVE-2022-41218</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-41674">CVE-2022-41674</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-42703">CVE-2022-42703</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-42720">CVE-2022-42720</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-42721">CVE-2022-42721</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-42722">CVE-2022-42722</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-43750">CVE-2022-43750</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2022-47929">CVE-2022-47929</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-0394">CVE-2023-0394</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-0461">CVE-2023-0461</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-1195">CVE-2023-1195</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-1582">CVE-2023-1582</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-2491">CVE-2023-2491</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-22490">CVE-2023-22490</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-23454">CVE-2023-23454</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-23946">CVE-2023-23946</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-25652">CVE-2023-25652</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-25815">CVE-2023-25815</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-27535">CVE-2023-27535</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/security/cve/CVE-2023-29007">CVE-2023-29007</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

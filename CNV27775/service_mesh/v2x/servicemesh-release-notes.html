@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2468,10 +2473,13 @@
 <li><a href="#making-open-source-more-inclusive_ossm-release-notes">Making open source more inclusive</a></li>
 <li><a href="#ossm-rn-new-features_ossm-release-notes">New features and enhancements</a>
 <ul class="sectlevel2">
+<li><a href="#new-features-red-hat-openshift-service-mesh-version-2-4">New features Red Hat OpenShift Service Mesh version 2.4</a></li>
+<li><a href="#new-features-red-hat-openshift-service-mesh-version-2-3-4">New features Red Hat OpenShift Service Mesh version 2.3.4</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-3-3">New features Red Hat OpenShift Service Mesh version 2.3.3</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-3-2">New features Red Hat OpenShift Service Mesh version 2.3.2</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-3-1">New features Red Hat OpenShift Service Mesh version 2.3.1</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-3">New features Red Hat OpenShift Service Mesh version 2.3</a></li>
+<li><a href="#new-features-red-hat-openshift-service-mesh-version-2-2-7">New features Red Hat OpenShift Service Mesh version 2.2.7</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-2-6">New features Red Hat OpenShift Service Mesh version 2.2.6</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-2-5">New features Red Hat OpenShift Service Mesh version 2.2.5</a></li>
 <li><a href="#new-features-red-hat-openshift-service-mesh-version-2-2-4">New features Red Hat OpenShift Service Mesh version 2.2.4</a></li>
@@ -2509,11 +2517,12 @@
 <li><a href="#ossm-rn-tech-preview_ossm-release-notes">Technology Preview</a></li>
 <li><a href="#ossm-deprecated-features_ossm-release-notes">Deprecated and removed features</a>
 <ul class="sectlevel2">
-<li><a href="#deprecated-and-removed-features-red-hat-openshift-service-mesh-2-3">Deprecated and removed features Red Hat OpenShift Service Mesh 2.3</a></li>
-<li><a href="#deprecated-features-red-hat-openshift-service-mesh-2-2">Deprecated features Red Hat OpenShift Service Mesh 2.2</a></li>
-<li><a href="#removed-features-red-hat-openshift-service-mesh-2-2">Removed features Red Hat OpenShift Service Mesh 2.2</a></li>
-<li><a href="#removed-features-red-hat-openshift-service-mesh-2-1">Removed features Red Hat OpenShift Service Mesh 2.1</a></li>
-<li><a href="#deprecated-features-red-hat-openshift-service-mesh-2-0">Deprecated features Red Hat OpenShift Service Mesh 2.0</a></li>
+<li><a href="#deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-4">Deprecated and removed features in Red Hat OpenShift Service Mesh 2.4</a></li>
+<li><a href="#deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-3">Deprecated and removed features in Red Hat OpenShift Service Mesh 2.3</a></li>
+<li><a href="#deprecated-features-in-red-hat-openshift-service-mesh-2-2">Deprecated features in Red Hat OpenShift Service Mesh 2.2</a></li>
+<li><a href="#removed-features-in-red-hat-openshift-service-mesh-2-2">Removed features in Red Hat OpenShift Service Mesh 2.2</a></li>
+<li><a href="#removed-features-in-red-hat-openshift-service-mesh-2-1">Removed features in Red Hat OpenShift Service Mesh 2.1</a></li>
+<li><a href="#deprecated-features-in-red-hat-openshift-service-mesh-2-0">Deprecated features in Red Hat OpenShift Service Mesh 2.0</a></li>
 </ul>
 </li>
 <li><a href="#ossm-rn-known-issues_ossm-release-notes">Known issues</a>
@@ -2548,9 +2557,278 @@
 <p>This release adds improvements related to the following components and concepts.</p>
 </div>
 <div class="sect2">
+<h3 id="new-features-red-hat-openshift-service-mesh-version-2-4"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-4"></a>New features Red Hat OpenShift Service Mesh version 2.4</h3>
+<div class="paragraph">
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.10 and later versions.</p>
+</div>
+<div class="sect3">
+<h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-4"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-4"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.4</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Istio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.16.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Envoy Proxy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.24.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jaeger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.42.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kiali</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.65.6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="cluster-wide-deployments"><a class="anchor" href="#cluster-wide-deployments"></a>Cluster-wide deployments</h4>
+<div class="paragraph">
+<p>This enhancement introduces a generally available version of cluster-wide deployments. A cluster-wide deployment contains a service mesh control plane that monitors resources for an entire cluster. The control plane uses a single query across all namespaces to monitor each Istio or Kubernetes resource that affects the mesh configuration. Reducing the number of queries the control plane performs in a cluster-wide deployment improves performance.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="support-for-discovery-selectors"><a class="anchor" href="#support-for-discovery-selectors"></a>Support for discovery selectors</h4>
+<div class="paragraph">
+<p>This enhancement introduces a generally available version of the <code>meshConfig.discoverySelectors</code> field, which can be used in cluster-wide deployments to limit the services the service mesh control plane can discover.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">spec</span><span class="pi">:</span>
+  <span class="s">meshConfig</span>
+    <span class="s">discoverySelectors</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">matchLabels</span><span class="pi">:</span>
+        <span class="na">env</span><span class="pi">:</span> <span class="s">prod</span>
+        <span class="na">region</span><span class="pi">:</span> <span class="s">us-east1</span>
+    <span class="pi">-</span> <span class="na">matchExpressions</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">key</span><span class="pi">:</span> <span class="s">app</span>
+        <span class="na">operator</span><span class="pi">:</span> <span class="s">In</span>
+        <span class="na">values</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">cassandra</span>
+          <span class="pi">-</span> <span class="s">spark</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="integration-with-cert-manager-istio-csr"><a class="anchor" href="#integration-with-cert-manager-istio-csr"></a>Integration with cert-manager istio-csr</h4>
+<div class="paragraph">
+<p>With this update, Red Hat OpenShift Service Mesh integrates with the <code>cert-manager</code> controller and the <code>istio-csr</code> agent. <code>cert-manager</code> adds certificates and certificate issuers as resource types in Kubernetes clusters, and simplifies the process of obtaining, renewing, and using those certificates. <code>cert-manager</code> provides and rotates an intermediate CA certificate for Istio. Integration with <code>istio-csr</code> enables users to delegate signing certificate requests from Istio proxies to <code>cert-manager</code>. <code>ServiceMeshControlPlane</code> v2.4 accepts CA certificates provided by <code>cert-manager</code> as <code>cacerts</code> secret.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Integration with <code>cert-manager</code> and <code>istio-csr</code> is not supported on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="integration-with-external-authorization-systems"><a class="anchor" href="#integration-with-external-authorization-systems"></a>Integration with external authorization systems</h4>
+<div class="paragraph">
+<p>This enhancement introduces a generally available method of integrating Red Hat OpenShift Service Mesh with external authorization systems by using the <code>action: CUSTOM</code> field of the <code>AuthorizationPolicy</code> resource. Use the <code>envoyExtAuthzHttp</code> field to delegate the access control to an external authorization system.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="integration-with-external-prometheus-installation"><a class="anchor" href="#integration-with-external-prometheus-installation"></a>Integration with external Prometheus installation</h4>
+<div class="paragraph">
+<p>This enhancement introduces a generally available version of the Prometheus extension provider. You can expose metrics to the OpenShift Container Platform monitoring stack or a custom Prometheus installation by setting the value of the <code>extensionProviders</code> field to <code>prometheus</code> in the <code>spec.meshConfig</code> specification. The telemetry object configures Istio proxies to collect traffic metrics. Service Mesh only supports the Telemetry API for Prometheus metrics.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">spec</span><span class="pi">:</span>
+  <span class="na">meshConfig</span><span class="pi">:</span>
+    <span class="na">extenstionProviders</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus</span>
+      <span class="na">prometheus</span><span class="pi">:</span> <span class="pi">{}</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">telemetry.istio.io/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Telemetry</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">enable-prometheus-metrics</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">metrics</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">providers</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="single-stack-ipv6-support"><a class="anchor" href="#single-stack-ipv6-support"></a>Single stack IPv6 support</h4>
+<div class="paragraph">
+<p>This enhancement introduces generally available support for single stack IPv6 clusters, providing access to a broader range of IP addresses. Dual stack IPv4 or IPv6 cluster is not supported.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Single stack IPv6 support is not available on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="openshift-container-platform-gateway-api-support"><a class="anchor" href="#openshift-container-platform-gateway-api-support"></a>OpenShift Container Platform Gateway API support</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>{FeatureName} is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This enhancement introduces an updated Technology Preview version of the OpenShift Container Platform Gateway API. By default, the OpenShift Container Platform Gateway API is disabled.</p>
+</div>
+<div class="sect4">
+<h5 id="enabling-openshift-container-platform-gateway-api"><a class="anchor" href="#enabling-openshift-container-platform-gateway-api"></a>Enabling OpenShift Container Platform Gateway API</h5>
+<div class="paragraph">
+<p>To enable the OpenShift Container Platform Gateway API, set the value of the <code>enabled</code> field to <code>true</code> in the <code>techPreview.gatewayAPI</code> specification of the <code>ServiceMeshControlPlane</code> resource.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">spec</span><span class="pi">:</span>
+  <span class="na">techPreview</span><span class="pi">:</span>
+    <span class="na">gatewayAPI</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Previously, environment variables were used to enable the Gateway API.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">spec</span><span class="pi">:</span>
+  <span class="na">runtime</span><span class="pi">:</span>
+    <span class="na">components</span><span class="pi">:</span>
+      <span class="na">pilot</span><span class="pi">:</span>
+        <span class="na">container</span><span class="pi">:</span>
+          <span class="na">env</span><span class="pi">:</span>
+            <span class="na">PILOT_ENABLE_GATEWAY_API</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+            <span class="na">PILOT_ENABLE_GATEWAY_API_STATUS</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+            <span class="na">PILOT_ENABLE_GATEWAY_API_DEPLOYMENT_CONTROLLER</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="control-plane-deployment-on-infrastructure-nodes"><a class="anchor" href="#control-plane-deployment-on-infrastructure-nodes"></a>Control plane deployment on infrastructure nodes</h4>
+<div class="paragraph">
+<p>Service Mesh control plane deployment is now supported and documented on OpenShift infrastructure nodes. For more information, see the following documentation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configuring all Service Mesh control plane components to run on infrastructure nodes</p>
+</li>
+<li>
+<p>Configuring individual Service Mesh control plane components to run on infrastructure nodes</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="istio-1-16-support"><a class="anchor" href="#istio-1-16-support"></a>Istio 1.16 support</h4>
+<div class="paragraph">
+<p>Service Mesh 2.4 is based on Istio 1.16, which brings in new features and product enhancements. While many Istio 1.16 features are supported, the following exceptions should be noted:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HBONE protocol for sidecars is an experimental feature that is not supported.</p>
+</li>
+<li>
+<p>Service Mesh on ARM64 architecture is not supported.</p>
+</li>
+<li>
+<p>OpenTelemetry API remains a Technology Preview feature.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="new-features-red-hat-openshift-service-mesh-version-2-3-4"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-3-4"></a>New features Red Hat OpenShift Service Mesh version 2.3.4</h3>
+<div class="paragraph">
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.10 and later versions.</p>
+</div>
+<div class="sect3">
+<h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-4"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-4"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.3.4</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Istio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.14.6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Envoy Proxy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.22.9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jaeger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.42.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kiali</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.57.9</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-3-3"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-3-3"></a>New features Red Hat OpenShift Service Mesh version 2.3.3</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-3"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-3"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.3.3</h4>
@@ -2589,7 +2867,7 @@
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-3-2"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-3-2"></a>New features Red Hat OpenShift Service Mesh version 2.3.2</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-2"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-2"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.3.2</h4>
@@ -2628,7 +2906,7 @@
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-3-1"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-3-1"></a>New features Red Hat OpenShift Service Mesh version 2.3.1</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh introduces new features, addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh introduces new features, addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-1"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-3-1"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.3.1</h4>
@@ -2667,7 +2945,7 @@
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-3"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-3"></a>New features Red Hat OpenShift Service Mesh version 2.3</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh introduces new features, addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9, 4.10, and 4.11.</p>
+<p>This release of Red Hat OpenShift Service Mesh introduces new features, addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-3"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-3"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.3</h4>
@@ -2768,9 +3046,45 @@ the development process.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="cluster-wide-deployment"><a class="anchor" href="#cluster-wide-deployment"></a>Cluster-Wide deployment</h4>
+<h4 id="cluster-wide-deployment"><a class="anchor" href="#cluster-wide-deployment"></a>Cluster-wide deployment</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Cluster-wide deployment is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>This release introduces cluster-wide deployment as a Technology Preview feature. A cluster-wide deployment contains a Service Mesh Control Plane that monitors resources for an entire cluster. The control plane uses a single query across all namespaces to monitor each Istio or Kubernetes resource kind that affects the mesh configuration. In contrast, the multitenant approach uses a query per namespace for each resource kind. Reducing the number of queries the control plane performs in a cluster-wide deployment improves performance.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This cluster-wide deployment documentation is only applicable for control planes deployed using SMCP v2.3. cluster-wide deployments created using SMCP v2.3 are not compatible with cluster-wide deployments created using SMCP v2.4.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect4">
 <h5 id="configuring-cluster-wide-deployment"><a class="anchor" href="#configuring-cluster-wide-deployment"></a>Configuring cluster-wide deployment</h5>
@@ -2830,9 +3144,48 @@ the development process.</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-7"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-7"></a>New features Red Hat OpenShift Service Mesh version 2.2.7</h3>
+<div class="paragraph">
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.10 and later versions.</p>
+</div>
+<div class="sect3">
+<h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-7"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-7"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.7</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Istio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.12.9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Envoy Proxy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.20.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jaeger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.42.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kiali</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.48.6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-6"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-6"></a>New features Red Hat OpenShift Service Mesh version 2.2.6</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-6"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-6"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.6</h4>
@@ -2871,7 +3224,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-5"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-5"></a>New features Red Hat OpenShift Service Mesh version 2.2.5</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-5"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-5"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.5</h4>
@@ -2910,7 +3263,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-4"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-4"></a>New features Red Hat OpenShift Service Mesh version 2.2.4</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-4"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-4"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.4</h4>
@@ -2949,7 +3302,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-3"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-3"></a>New features Red Hat OpenShift Service Mesh version 2.2.3</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-3"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-3"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.3</h4>
@@ -2988,7 +3341,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-2"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-2"></a>New features Red Hat OpenShift Service Mesh version 2.2.2</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-2"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-2"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.2</h4>
@@ -3033,7 +3386,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-version-2-2-1"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-version-2-2-1"></a>New features Red Hat OpenShift Service Mesh version 2.2.1</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-1"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2-1"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2.1</h4>
@@ -3072,7 +3425,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-2-2"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-2-2"></a>New features Red Hat OpenShift Service Mesh 2.2</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh adds new features and enhancements, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh adds new features and enhancements, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-2"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-2"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.2</h4>
@@ -3252,7 +3605,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-2-1-6"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-2-1-6"></a>New features Red Hat OpenShift Service Mesh 2.1.6</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-6"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-6"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.1.6</h4>
@@ -3291,7 +3644,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-2-1-5-2"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-2-1-5-2"></a>New features Red Hat OpenShift Service Mesh 2.1.5.2</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), contains bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5-2"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5-2"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.1.5.2</h4>
@@ -3330,7 +3683,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-2-1-5-1"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-2-1-5-1"></a>New features Red Hat OpenShift Service Mesh 2.1.5.1</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5-1"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5-1"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.1.5.1</h4>
@@ -3369,7 +3722,7 @@ the development process.</p>
 <div class="sect2">
 <h3 id="new-features-red-hat-openshift-service-mesh-2-1-5"><a class="anchor" href="#new-features-red-hat-openshift-service-mesh-2-1-5"></a>New features Red Hat OpenShift Service Mesh 2.1.5</h3>
 <div class="paragraph">
-<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 or later.</p>
+<p>This release of Red Hat OpenShift Service Mesh addresses Common Vulnerabilities and Exposures (CVEs), bug fixes, and is supported on OpenShift Container Platform 4.9 and later versions.</p>
 </div>
 <div class="sect3">
 <h4 id="component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5"><a class="anchor" href="#component-versions-included-in-red-hat-openshift-service-mesh-version-2-1-5"></a>Component versions included in Red Hat OpenShift Service Mesh version 2.1.5</h4>
@@ -4534,7 +4887,50 @@ This filter will change both the path used for comparison and the path presented
 <p>Removed functionality no longer exists in the product.</p>
 </div>
 <div class="sect2">
-<h3 id="deprecated-and-removed-features-red-hat-openshift-service-mesh-2-3"><a class="anchor" href="#deprecated-and-removed-features-red-hat-openshift-service-mesh-2-3"></a>Deprecated and removed features Red Hat OpenShift Service Mesh 2.3</h3>
+<h3 id="deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-4"><a class="anchor" href="#deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-4"></a>Deprecated and removed features in Red Hat OpenShift Service Mesh 2.4</h3>
+<div class="paragraph">
+<p>The v2.1 <code>ServiceMeshControlPlane</code> resource is no longer supported. Customers should upgrade their mesh deployments to use a later version of the <code>ServiceMeshControlPlane</code> resource.</p>
+</div>
+<div class="paragraph">
+<p>Support for Istio OpenShift Routing (IOR) is deprecated and will be removed in a future release.</p>
+</div>
+<div class="paragraph">
+<p>Support for Grafana is deprecated and will be removed in a future release.</p>
+</div>
+<div class="paragraph">
+<p>Support for the following cipher suites, which were deprecated in Red Hat OpenShift Service Mesh 2.3, has been removed from the default list of ciphers used in TLS negotiations on both the client and server sides. Applications that require access to services requiring one of these cipher suites will fail to connect when a TLS connection is initiated from the proxy.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ECDHE-ECDSA-AES128-SHA</p>
+</li>
+<li>
+<p>ECDHE-RSA-AES128-SHA</p>
+</li>
+<li>
+<p>AES128-GCM-SHA256</p>
+</li>
+<li>
+<p>AES128-SHA</p>
+</li>
+<li>
+<p>ECDHE-ECDSA-AES256-SHA</p>
+</li>
+<li>
+<p>ECDHE-RSA-AES256-SHA</p>
+</li>
+<li>
+<p>AES256-GCM-SHA384</p>
+</li>
+<li>
+<p>AES256-SHA</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-3"><a class="anchor" href="#deprecated-and-removed-features-in-red-hat-openshift-service-mesh-2-3"></a>Deprecated and removed features in Red Hat OpenShift Service Mesh 2.3</h3>
 <div class="paragraph">
 <p>Support for the following cipher suites has been deprecated. In a future release, they will be removed from the default list of ciphers used in TLS negotiations on both the client and server sides.</p>
 </div>
@@ -4571,19 +4967,19 @@ This filter will change both the path used for comparison and the path presented
 </div>
 </div>
 <div class="sect2">
-<h3 id="deprecated-features-red-hat-openshift-service-mesh-2-2"><a class="anchor" href="#deprecated-features-red-hat-openshift-service-mesh-2-2"></a>Deprecated features Red Hat OpenShift Service Mesh 2.2</h3>
+<h3 id="deprecated-features-in-red-hat-openshift-service-mesh-2-2"><a class="anchor" href="#deprecated-features-in-red-hat-openshift-service-mesh-2-2"></a>Deprecated features in Red Hat OpenShift Service Mesh 2.2</h3>
 <div class="paragraph">
 <p>The <code>ServiceMeshExtension</code> API is deprecated as of release 2.2 and will be removed in a future release.  While <code>ServiceMeshExtension</code> API is still supported in release 2.2, customers should start moving to the new <code>WasmPlugin</code> API.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="removed-features-red-hat-openshift-service-mesh-2-2"><a class="anchor" href="#removed-features-red-hat-openshift-service-mesh-2-2"></a>Removed features Red Hat OpenShift Service Mesh 2.2</h3>
+<h3 id="removed-features-in-red-hat-openshift-service-mesh-2-2"><a class="anchor" href="#removed-features-in-red-hat-openshift-service-mesh-2-2"></a>Removed features in Red Hat OpenShift Service Mesh 2.2</h3>
 <div class="paragraph">
 <p>This release marks the end of support for Service Mesh control planes based on Service Mesh 1.1 for all platforms.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="removed-features-red-hat-openshift-service-mesh-2-1"><a class="anchor" href="#removed-features-red-hat-openshift-service-mesh-2-1"></a>Removed features Red Hat OpenShift Service Mesh 2.1</h3>
+<h3 id="removed-features-in-red-hat-openshift-service-mesh-2-1"><a class="anchor" href="#removed-features-in-red-hat-openshift-service-mesh-2-1"></a>Removed features in Red Hat OpenShift Service Mesh 2.1</h3>
 <div class="paragraph">
 <p>In Service Mesh 2.1, the Mixer component is removed. Bug fixes and support is provided through the end of the Service Mesh 2.0 life cycle.</p>
 </div>
@@ -4592,7 +4988,7 @@ This filter will change both the path used for comparison and the path presented
 </div>
 </div>
 <div class="sect2">
-<h3 id="deprecated-features-red-hat-openshift-service-mesh-2-0"><a class="anchor" href="#deprecated-features-red-hat-openshift-service-mesh-2-0"></a>Deprecated features Red Hat OpenShift Service Mesh 2.0</h3>
+<h3 id="deprecated-features-in-red-hat-openshift-service-mesh-2-0"><a class="anchor" href="#deprecated-features-in-red-hat-openshift-service-mesh-2-0"></a>Deprecated features in Red Hat OpenShift Service Mesh 2.0</h3>
 <div class="paragraph">
 <p>The Mixer component was deprecated in release 2.0 and will be removed in release 2.1. While using Mixer for implementing extensions was still supported in release 2.0, extensions should have been migrated to the new <a href="https://istio.io/latest/blog/2020/wasm-announce/">WebAssembly</a> mechanism.</p>
 </div>
@@ -4667,7 +5063,7 @@ This filter will change both the path used for comparison and the path presented
 <div class="ulist">
 <ul>
 <li>
-<p>Red Hat OpenShift Service Mesh does not yet support <a href="https://issues.redhat.com/browse/MAISTRA-1314">IPv6</a>, as it is not yet fully supported by the upstream Istio project.  As a result, Red Hat OpenShift Service Mesh does not support dual-stack clusters.</p>
+<p>Red Hat OpenShift Service Mesh does not yet fully support <a href="https://issues.redhat.com/browse/MAISTRA-1314">IPv6</a>. As a result, Red Hat OpenShift Service Mesh does not support dual-stack clusters.</p>
 </li>
 <li>
 <p>Graph layout - The layout for the Kiali graph can render differently, depending on your application architecture and the data to display (number of graph nodes and their interactions). Because it is difficult if not impossible to create a single layout that renders nicely for every situation, Kiali offers a choice of several different layouts. To choose a different layout, you can choose a different <strong>Layout Schema</strong> from the <strong>Graph Settings</strong> menu.</p>
@@ -4676,13 +5072,16 @@ This filter will change both the path used for comparison and the path presented
 <p>The first time you access related services such as distributed tracing platform and Grafana, from the Kiali console, you must accept the certificate and re-authenticate using your OpenShift Container Platform login credentials. This happens due to an issue with how the framework displays embedded pages in the console.</p>
 </li>
 <li>
-<p>The Bookinfo sample application cannot be installed on IBM Z and IBM Power.</p>
+<p>The Bookinfo sample application cannot be installed on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
 </li>
 <li>
-<p>WebAssembly extensions are not supported on IBM Z and IBM Power.</p>
+<p>WebAssembly extensions are not supported on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
 </li>
 <li>
-<p>LuaJIT is not supported on IBM Power.</p>
+<p>LuaJIT is not supported on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
+</li>
+<li>
+<p>Single stack IPv6 support is not available on IBM Power, IBM zSystems, and IBM&#174; LinuxONE.</p>
 </li>
 </ul>
 </div>
@@ -4694,12 +5093,29 @@ This filter will change both the path used for comparison and the path presented
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://issues.redhat.com/browse/OSSM-2221">OSSM-2221</a> Gateway injection does not work in control plane namespace. If you use the Gateway injection feature to create a gateway in the same location as the control plane, the injection fails and OpenShift generates this message:</p>
-<div class="paragraph">
-<p><code>Warning  Failed          10s   kubelet, ocp-wide-vh8fd-worker-vhqm9  Failed to pull image "auto": rpc error: code = Unknown desc = reading manifest latest in docker.io/library/auto: errors</code></p>
+<p><a href="https://issues.redhat.com/browse/OSSM-3890">OSSM-3890</a> Attempting to use the Gateway API in a multitenant mesh deployment generates an error message similar to the following:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="text">2023-05-02T15:20:42.541034Z	error	watch error in cluster Kubernetes: failed to list *v1alpha2.TLSRoute: the server could not find the requested resource (get tlsroutes.gateway.networking.k8s.io)
+2023-05-02T15:20:42.616450Z	info	kube	controller "gateway.networking.k8s.io/v1alpha2/TCPRoute" is syncing...</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>To create a gateway in the control plane namespace, use the <code>gateways</code> parameter in the SMCP spec to configure ingress and egress gateways for the mesh.</p>
+<p>To support Gateway API in a multitenant mesh deployment, all Gateway API Custom Resource Definition (CRD) files must be present in the cluster.</p>
+</div>
+<div class="paragraph">
+<p>In a multitenant mesh deployment, CRD scan is disabled, and Istio has no way to discover which CRDs are present in a cluster. As a result, Istio attempts to watch all supported Gateway API CRDs, but generates errors if some of those CRDs are not present.</p>
+</div>
+<div class="paragraph">
+<p>Service Mesh 2.3.1 and later versions support both <code>v1alpha2</code> and <code>v1beta1</code> CRDs. Therefore, both CRD versions must be present for a multitenant mesh deployment to support the Gateway API.</p>
+</div>
+<div class="paragraph">
+<p>Workaround: In the following example, the <code>kubectl get</code> operation installs the <code>v1alpha2</code> and <code>v1beta1</code> CRDs. Note the URL contains the additional <code>experimental</code> segment and updates any of your existing scripts accordingly:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>kubectl get crd gateways.gateway.networking.k8s.io <span class="o">||</span>   <span class="o">{</span> kubectl kustomize <span class="s2">"github.com/kubernetes-sigs/gateway-api/config/crd/experimental?ref=v0.5.1"</span> | kubectl apply <span class="nt">-f</span> -<span class="p">;</span> <span class="o">}</span></code></pre>
+</div>
 </div>
 </li>
 <li>
@@ -4783,7 +5199,7 @@ For more information, see Migrating from <code>ServiceMeshExtension</code> to <c
 <p><a href="https://issues.redhat.com/browse/MAISTRA-2692">MAISTRA-2692</a> With Mixer removed, custom metrics that have been defined in Service Mesh 2.0.x cannot be used in 2.1. Custom metrics can be configured using <code>EnvoyFilter</code>. Red Hat is unable to support <code>EnvoyFilter</code> configuration except where explicitly documented. This is due to tight coupling with the underlying Envoy APIs, meaning that backward compatibility cannot be maintained.</p>
 </li>
 <li>
-<p><a href="https://issues.redhat.com/browse/MAISTRA-2648">MAISTRA-2648</a> <code>ServiceMeshExtensions</code> are currently not compatible with meshes deployed on IBM Z Systems.</p>
+<p><a href="https://issues.redhat.com/browse/MAISTRA-2648">MAISTRA-2648</a> Service mesh extensions are currently not compatible with meshes deployed on IBM zSystems.</p>
 </li>
 <li>
 <p><a href="https://issues.jboss.org/browse/MAISTRA-1959">MAISTRA-1959</a> <em>Migration to 2.0</em> Prometheus scraping (<code>spec.addons.prometheus.scrape</code> set to <code>true</code>) does not work when mTLS is enabled. Additionally, Kiali displays extraneous graph data when mTLS is disabled.</p>
@@ -4801,9 +5217,6 @@ For more information, see Migrating from <code>ServiceMeshExtension</code> to <c
           <span class="pi">-</span> <span class="s">15020</span></code></pre>
 </div>
 </div>
-</li>
-<li>
-<p><a href="https://issues.redhat.com/browse/MAISTRA-1314">MAISTRA-1314</a> Red Hat OpenShift Service Mesh does not yet support IPv6.</p>
 </li>
 <li>
 <p><a href="https://issues.jboss.org/browse/MAISTRA-453">MAISTRA-453</a> If you create a new project and deploy pods immediately, sidecar injection does not occur. The operator fails to add the <code>maistra.io/member-of</code> before the pods are created, therefore the pods must be deleted and recreated for sidecar injection to occur.</p>
@@ -4900,10 +5313,16 @@ There is no workaround for this issue.</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="https://issues.redhat.com/browse/OSSM-3993">OSSM-3993</a> Previously, Kiali only supported OpenShift OAuth via a proxy on the standard HTTPS port of <code>443</code>. Now, Kiali supports OpenShift OAuth over a non-standard HTTPS port. To enable the port, you must set the <code>spec.server.web_port</code> field to the proxy&#8217;s non-standard HTTPS port in the Kiali CR.</p>
+</li>
+<li>
 <p><a href="https://issues.redhat.com/browse/OSSM-3644">OSSM-3644</a> Previously, the federation egress-gateway received the wrong update of network gateway endpoints, causing extra endpoint entries. Now, the federation-egress gateway has been updated on the server side so it receives the correct network gateway endpoints.</p>
 </li>
 <li>
 <p><a href="https://issues.redhat.com/browse/OSSM-3595">OSSM-3595</a> Previously, the <code>istio-cni</code> plugin sometimes failed on RHEL because SELinux did not allow the utility <code>iptables-restore</code> to open files in the <code>/tmp</code> directory. Now, SELinux passes <code>iptables-restore</code> via <code>stdin</code> input stream instead of via a file.</p>
+</li>
+<li>
+<p><a href="https://issues.redhat.com/browse/OSSM-3586">OSSM-3586</a> Previously, Istio proxies were slow to start when Google Cloud Platform (GCP) metadata servers were not available. When you upgrade to Istio 1.14.6, Istio proxies start as expected on GCP, even if metadata servers are not available.</p>
 </li>
 <li>
 <p><a href="https://issues.redhat.com/browse/OSSM-3025">OSSM-3025</a> Istiod sometimes fails to become ready. Sometimes, when a mesh contained many member namespaces, the Istiod pod did not become ready due to a deadlock within Istiod. The deadlock is now resolved and the pod now starts as expected.</p>
@@ -4931,6 +5350,23 @@ There is no workaround for this issue.</p>
 </li>
 <li>
 <p><a href="https://issues.redhat.com/browse/OSSM-2335">OSSM-2335</a> Dragging the mouse pointer over the Traces scatterchart plot sometimes caused the Kiali console to stop responding due to concurrent backend requests.</p>
+</li>
+<li>
+<p><a href="https://issues.redhat.com/browse/OSSM-2221">OSSM-2221</a> Previously, gateway injection in the <code>ServiceMeshControlPlane</code> namespace was not possible because the <code>ignore-namespace</code> label was applied to the namespace by default.</p>
+<div class="paragraph">
+<p>When creating a v2.4 control plane, the namespace no longer has the <code>ignore-namespace</code> label applied, and gateway injection is possible.</p>
+</div>
+<div class="paragraph">
+<p>In the following example, the <code>oc label</code> command removes the <code>ignore-namespace</code> label from a namespace in an existing deployment:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc label namespace &lt;istio_system&gt; maistra.io/ignore-namespace-</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above, &lt;istio_system&gt; represents the name of the <code>ServiceMeshControlPlane</code> namespace.</p>
+</div>
 </li>
 <li>
 <p><a href="https://issues.redhat.com/browse/OSSM-2053">OSSM-2053</a> Using Red Hat OpenShift Service Mesh Operator 2.2 or 2.3, during SMCP reconciliation, the SMMR controller removed the member namespaces from <code>SMMR.status.configuredMembers</code>. This caused the services in the member namespaces to become unavailable for a few moments.</p>

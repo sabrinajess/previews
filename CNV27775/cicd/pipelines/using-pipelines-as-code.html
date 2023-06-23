@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2474,6 +2479,7 @@
 <li><a href="#configuring-github-app-for-pac">Configuring a GitHub App</a></li>
 <li><a href="#configuring-pac-for-github-app">Configuring Pipelines as Code to access a GitHub App</a></li>
 <li><a href="#creating-a-github-application-in-administrator-perspective_using-pipelines-as-code">Creating a GitHub App in administrator perspective</a></li>
+<li><a href="#scoping-github-token_using-pipelines-as-code">Scoping the GitHub token to additional repositories</a></li>
 </ul>
 </li>
 <li><a href="#using-pipelines-as-code-with-github-webhook_using-pipelines-as-code">Using Pipelines as Code with GitHub Webhook</a></li>
@@ -2481,13 +2487,14 @@
 <li><a href="#using-pipelines-as-code-with-bitbucket-cloud_using-pipelines-as-code">Using Pipelines as Code with Bitbucket Cloud</a></li>
 <li><a href="#using-pipelines-as-code-with-bitbucket-server_using-pipelines-as-code">Using Pipelines as Code with Bitbucket Server</a></li>
 <li><a href="#interfacing-pipelines-as-code-with-custom-certificates_using-pipelines-as-code">Interfacing Pipelines as Code with custom certificates</a></li>
-<li><a href="#using-repository-crd-with-pipelines-as-code_using-pipelines-as-code">Using the <code>Repository</code> CRD with Pipelines as Code</a>
+<li><a href="#using-repository-crd-with-pipelines-as-code_using-pipelines-as-code">Using the Repository custom resource definition (CRD) with Pipelines as Code</a>
 <ul class="sectlevel2">
-<li><a href="#setting-concurrency-limits-in-repository-crd_using-pipelines-as-code">Setting concurrency limits in the <code>Repository</code> CRD</a></li>
+<li><a href="#setting-concurrency-limits-in-repository-crd_using-pipelines-as-code">Setting concurrency limits</a></li>
+<li><a href="#changing-source-branch-in-repository-crd_using-pipelines-as-code">Changing the source branch for the pipeline definition</a></li>
 <li><a href="#op-custom-parameter-expansion_using-pipelines-as-code">Custom parameter expansion</a></li>
 </ul>
 </li>
-<li><a href="#using-pipelines-as-code-resolver_using-pipelines-as-code">Using Pipelines as Code resolver</a>
+<li><a href="#using-pipelines-as-code-resolver_using-pipelines-as-code">Using the Pipelines as Code resolver</a>
 <ul class="sectlevel2">
 <li><a href="#using-remote-task-annotations-with-pipelines-as-code_using-pipelines-as-code">Using remote task annotations with Pipelines as Code</a></li>
 <li><a href="#using-remote-pipeline-annotations-with-pipelines-as-code_using-pipelines-as-code">Using remote pipeline annotations with Pipelines as Code</a></li>
@@ -2507,11 +2514,12 @@
 <li><a href="#utility-commands">Utility commands</a></li>
 </ul>
 </li>
+<li><a href="#splitting-pipelines-as-code-logs-by-namespace_using-pipelines-as-code">Splitting Pipelines as Code logs by namespace</a></li>
 <li><a href="#additional-resources-pac">Additional resources</a></li>
 </ul>
 </div>
 <div class="paragraph _abstract">
-<p>With Pipelines as Code, cluster administrators and users with the required privileges can define pipeline templates as part of source code Git repositories. When triggered by a source code push or a pull request for the configured Git repository, the feature runs the pipeline and reports the status.</p>
+<p>With Pipelines as Code, cluster administrators and users with the required privileges can define pipeline templates as part of source code Git repositories. When triggered by a source code push or a pull request for the configured Git repository, Pipelines as Code runs the pipeline and reports the status.</p>
 </div>
 </div>
 </div>
@@ -2568,21 +2576,24 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
- <span class="na">spec</span><span class="pi">:</span>
-    <span class="na">platforms</span><span class="pi">:</span>
-      <span class="na">openshift</span><span class="pi">:</span>
-        <span class="na">pipelinesAsCode</span><span class="pi">:</span>
-          <span class="na">enable</span><span class="pi">:</span> <span class="no">false</span>
-          <span class="na">settings</span><span class="pi">:</span>
-            <span class="na">application-name</span><span class="pi">:</span> <span class="s">Pipelines as Code CI</span>
-            <span class="na">auto-configure-new-github-repo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
-            <span class="na">bitbucket-cloud-check-source-ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-            <span class="na">hub-catalog-name</span><span class="pi">:</span> <span class="s">tekton</span>
-            <span class="na">hub-url</span><span class="pi">:</span> <span class="s">https://api.hub.tekton.dev/v1</span>
-            <span class="na">remote-tasks</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-            <span class="na">secret-auto-create</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-<span class="nn">...</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">platforms</span><span class="pi">:</span>
+    <span class="na">openshift</span><span class="pi">:</span>
+      <span class="na">pipelinesAsCode</span><span class="pi">:</span>
+        <span class="na">enable</span><span class="pi">:</span> <span class="no">false</span>
+        <span class="na">settings</span><span class="pi">:</span>
+          <span class="na">application-name</span><span class="pi">:</span> <span class="s">Pipelines as Code CI</span>
+          <span class="na">auto-configure-new-github-repo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
+          <span class="na">bitbucket-cloud-check-source-ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+          <span class="na">hub-catalog-name</span><span class="pi">:</span> <span class="s">tekton</span>
+          <span class="na">hub-url</span><span class="pi">:</span> <span class="s">https://api.hub.tekton.dev/v1</span>
+          <span class="na">remote-tasks</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+          <span class="na">secret-auto-create</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2598,21 +2609,24 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
- <span class="na">spec</span><span class="pi">:</span>
-    <span class="na">platforms</span><span class="pi">:</span>
-      <span class="na">openshift</span><span class="pi">:</span>
-        <span class="na">pipelinesAsCode</span><span class="pi">:</span>
-          <span class="na">enable</span><span class="pi">:</span> <span class="no">true</span>
-          <span class="na">settings</span><span class="pi">:</span>
-            <span class="na">application-name</span><span class="pi">:</span> <span class="s">Pipelines as Code CI</span>
-            <span class="na">auto-configure-new-github-repo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
-            <span class="na">bitbucket-cloud-check-source-ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-            <span class="na">hub-catalog-name</span><span class="pi">:</span> <span class="s">tekton</span>
-            <span class="na">hub-url</span><span class="pi">:</span> <span class="s">https://api.hub.tekton.dev/v1</span>
-            <span class="na">remote-tasks</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-            <span class="na">secret-auto-create</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-<span class="nn">...</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">platforms</span><span class="pi">:</span>
+    <span class="na">openshift</span><span class="pi">:</span>
+      <span class="na">pipelinesAsCode</span><span class="pi">:</span>
+        <span class="na">enable</span><span class="pi">:</span> <span class="no">true</span>
+        <span class="na">settings</span><span class="pi">:</span>
+          <span class="na">application-name</span><span class="pi">:</span> <span class="s">Pipelines as Code CI</span>
+          <span class="na">auto-configure-new-github-repo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
+          <span class="na">bitbucket-cloud-check-source-ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+          <span class="na">hub-catalog-name</span><span class="pi">:</span> <span class="s">tekton</span>
+          <span class="na">hub-url</span><span class="pi">:</span> <span class="s">https://api.hub.tekton.dev/v1</span>
+          <span class="na">remote-tasks</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+          <span class="na">secret-auto-create</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2752,10 +2766,20 @@
 <p><strong>Homepage URL</strong>: OpenShift Console URL</p>
 </li>
 <li>
-<p><strong>Webhook URL</strong>: The Pipelines as Code route or ingress URL. You can find it by running the command <code>echo <a href="https://$(oc" class="bare">https://$(oc</a> get route -n openshift-pipelines pipelines-as-code-controller -o jsonpath='{.spec.host}')</code>.</p>
+<p><strong>Webhook URL</strong>: The Pipelines as Code route or ingress URL. You can find it by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">echo </span>https://<span class="si">$(</span>oc get route <span class="nt">-n</span> openshift-pipelines pipelines-as-code-controller <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">'{.spec.host}'</span><span class="si">)</span></code></pre>
+</div>
+</div>
 </li>
 <li>
-<p><strong>Webhook secret</strong>: An arbitrary secret. You can generate a secret by executing the command <code>openssl rand -hex 20</code>.</p>
+<p><strong>Webhook secret</strong>: An arbitrary secret. You can generate a secret by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>openssl rand <span class="nt">-hex</span> 20</code></pre>
+</div>
+</div>
 </li>
 </ul>
 </div>
@@ -2919,6 +2943,141 @@
 </div>
 <div class="paragraph">
 <p>To view details such as name, link, and secret associated with the GitHub applications, navigate to <strong>Pipelines</strong> and click <strong>View GitHub App</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scoping-github-token_using-pipelines-as-code"><a class="anchor" href="#scoping-github-token_using-pipelines-as-code"></a>Scoping the GitHub token to additional repositories</h3>
+<div class="paragraph">
+<p>Pipelines as Code uses the GitHub app to generate a GitHub access token. Pipelines as Code uses this token to retrieve the pipeline payload from the repository and to enable the CI/CD processes to interact with GitHub repositories.</p>
+</div>
+<div class="paragraph">
+<p>By default, the access token is scoped only to the repository from which Pipelines as Code retrieves the pipeline definition. In some cases, you might want the token to have access to additional repositories. For example, there might be a CI repository where the <code>.tekton/pr.yaml</code> file and source payload are located, but the build process defined in <code>pr.yaml</code> fetches tasks from a separate private CD repository.</p>
+</div>
+<div class="paragraph">
+<p>You can extend the scope of the GitHub token in two ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Global configuration</em>: You can extend the GitHub token to a list of repositories in different namespaces. You must have administrative permissions to set this configuration.</p>
+</li>
+<li>
+<p><em>Repository level configuration</em>: You can extend the GitHub token to a list of repositories that exist in the same namespace as the original repository. You do not need administrative permissions to set this configuration.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the <code>TektonConfig</code> custom resource (CR), in the <code>pipelinesAsCode.settings</code> spec, set the <code>secret-github-app-token-scoped</code> parameter to <code>false</code>. This setting enables scoping the GitHub token to private and public repositories listed in the global and repository level configuration.</p>
+</li>
+<li>
+<p>To set global configuration for scoping the GitHub token, in the <code>TektonConfig</code> CR, in the <code>pipelinesAsCode.settings</code> spec, specify the additional repositories in the <code>secret-github-app-scope-extra-repos</code> parameter, as in the following example:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">platforms</span><span class="pi">:</span>
+    <span class="na">openshift</span><span class="pi">:</span>
+      <span class="na">pipelinesAsCode</span><span class="pi">:</span>
+        <span class="na">enable</span><span class="pi">:</span> <span class="no">true</span>
+        <span class="na">settings</span><span class="pi">:</span>
+          <span class="na">secret-github-app-token-scoped</span><span class="pi">:</span> <span class="no">false</span>
+          <span class="na">secret-github-app-scope-extra-repos</span><span class="pi">:</span> <span class="s2">"</span><span class="s">owner2/project2,</span><span class="nv"> </span><span class="s">owner3/project3"</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>To set repository level configuration for scoping the GitHub token, specify the additional repositories in the <code>github_app_token_scope_repos</code> parameter of the <code>Repository</code> CR, as in the following example:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">test</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">test-repo</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://github.com/linda/project"</span>
+  <span class="na">settings</span><span class="pi">:</span>
+    <span class="na">github_app_token_scope_repos</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">owner/project"</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">owner1/project1"</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>Repository</code> custom resource is associated with the <code>linda/project</code> repository in the <code>test-repo</code> namespace. The scope of the generated GitHub token is extended to the <code>owner/project</code> and <code>owner1/project1</code> repositories, as well as the <code>linda/project</code> repository. These repositories must exist under the <code>test-repo</code> namespace.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The additional repositories can be public or private, but must reside in the same namespace as the repository with which the <code>Repository</code> resource is associated.</p>
+</div>
+<div class="paragraph">
+<p>If any of the repositories do not exist in the namespace, the scoping of the GitHub token fails with an error message:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">failed to scope GitHub token as repo owner1/project1 does not exist in namespace test-repo</span></code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>The generated GitHub token enables access to the additional repositories that you configured in the global and repository level configuration, as well as the original repository where the Pipelines as Code payload files are located.</p>
+</div>
+<div class="paragraph">
+<p>If you provide both global configuration and repository level configuration, the token is scoped to all the repositories from both configurations, as in the following example.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>TektonConfig</code> custom resource</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">platforms</span><span class="pi">:</span>
+    <span class="na">openshift</span><span class="pi">:</span>
+      <span class="na">pipelinesAsCode</span><span class="pi">:</span>
+        <span class="na">enable</span><span class="pi">:</span> <span class="no">true</span>
+        <span class="na">settings</span><span class="pi">:</span>
+          <span class="na">secret-github-app-token-scoped</span><span class="pi">:</span> <span class="no">false</span>
+          <span class="na">secret-github-app-scope-extra-repos</span><span class="pi">:</span> <span class="s2">"</span><span class="s">owner2/project2,</span><span class="nv"> </span><span class="s">owner3/project3"</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title"><code>Repository</code> custom resource</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+ <span class="na">name</span><span class="pi">:</span> <span class="s">test</span>
+ <span class="na">namespace</span><span class="pi">:</span> <span class="s">test-repo</span>
+<span class="na">spec</span><span class="pi">:</span>
+ <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://github.com/linda/project"</span>
+ <span class="na">settings</span><span class="pi">:</span>
+   <span class="na">github_app_token_scope_repos</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="s2">"</span><span class="s">owner/project"</span>
+   <span class="pi">-</span> <span class="s2">"</span><span class="s">owner1/project1"</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The GitHub token is scoped to the <code>owner/project</code>, <code>owner1/project1</code>, <code>owner2/project2</code>, <code>owner3/project3</code>, and <code>linda/project</code> respositories.</p>
 </div>
 </div>
 </div>
@@ -3211,12 +3370,17 @@
 <p>Find the name of the secret in the <code>Repository</code> CR.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">my-repo</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">target-namespace</span>
 <span class="na">spec</span><span class="pi">:</span>
+<span class="c1"># ...</span>
   <span class="na">git_provider</span><span class="pi">:</span>
     <span class="na">secret</span><span class="pi">:</span>
       <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">github-webhook-config"</span>
-<span class="nn">...</span></code></pre>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 </li>
@@ -3727,10 +3891,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>To disable the default behavior, set the <code>bitbucket-cloud-check-source-ip key</code> to <code>false</code> in the Pipelines as Code config map for the <code>openshift-pipelines</code> namespace.</p>
+<p>To disable the default behavior, set the <code>bitbucket-cloud-check-source-ip</code> parameter to <code>false</code> in the <code>TektonConfig</code> custom resource, in the <code>pipelinesAsCode.settings</code> spec.</p>
 </li>
 <li>
-<p>To allow additional safe IP addresses or networks, add them as comma separated values to the <code>bitbucket-cloud-additional-source-ip</code> key in the Pipelines as Code config map for the <code>openshift-pipelines</code> namespace.</p>
+<p>To allow additional safe IP addresses or networks, add them as comma separated values to the <code>bitbucket-cloud-additional-source-ip</code> parameter in the <code>TektonConfig</code> custom resource, in the <code>pipelinesAsCode.settings</code> spec.</p>
 </li>
 </ul>
 </div>
@@ -3981,23 +4145,22 @@
 <div class="listingblock">
 <div class="title">Example: <code>Repository</code> CR</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">---</span>
-  <span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
-  <span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
-  <span class="na">metadata</span><span class="pi">:</span>
-    <span class="na">name</span><span class="pi">:</span> <span class="s">my-repo</span>
-    <span class="na">namespace</span><span class="pi">:</span> <span class="s">target-namespace</span>
-  <span class="na">spec</span><span class="pi">:</span>
-    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://bitbucket.com/workspace/repo"</span>
-    <span class="na">git_provider</span><span class="pi">:</span>
-      <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://bitbucket.server.api.url/rest"</span> <i class="conum" data-value="1"></i><b>(1)</b>
-      <span class="na">user</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;BITBUCKET_USERNAME&gt;"</span> <i class="conum" data-value="2"></i><b>(2)</b>
-      <span class="na">secret</span><span class="pi">:</span> <i class="conum" data-value="3"></i><b>(3)</b>
-        <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bitbucket-server-webhook-config"</span>
-        <span class="na">key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">provider.token"</span> <span class="c1"># Set this if you have a different key in your secret</span>
-      <span class="na">webhook_secret</span><span class="pi">:</span>
-        <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bitbucket-server-webhook-config"</span>
-        <span class="na">key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">webhook.secret"</span> <span class="c1"># Set this if you have a different key for your secret</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">my-repo</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">target-namespace</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://bitbucket.com/workspace/repo"</span>
+  <span class="na">git_provider</span><span class="pi">:</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://bitbucket.server.api.url/rest"</span> <i class="conum" data-value="1"></i><b>(1)</b>
+    <span class="na">user</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;BITBUCKET_USERNAME&gt;"</span> <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="na">secret</span><span class="pi">:</span> <i class="conum" data-value="3"></i><b>(3)</b>
+      <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bitbucket-server-webhook-config"</span>
+      <span class="na">key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">provider.token"</span> <span class="c1"># Set this if you have a different key in your secret</span>
+    <span class="na">webhook_secret</span><span class="pi">:</span>
+      <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bitbucket-server-webhook-config"</span>
+      <span class="na">key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">webhook.secret"</span> <span class="c1"># Set this if you have a different key for your secret</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -4071,7 +4234,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="using-repository-crd-with-pipelines-as-code_using-pipelines-as-code"><a class="anchor" href="#using-repository-crd-with-pipelines-as-code_using-pipelines-as-code"></a>Using the <code>Repository</code> CRD with Pipelines as Code</h2>
+<h2 id="using-repository-crd-with-pipelines-as-code_using-pipelines-as-code"><a class="anchor" href="#using-repository-crd-with-pipelines-as-code_using-pipelines-as-code"></a>Using the Repository custom resource definition (CRD) with Pipelines as Code</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
 <p>The <code>Repository</code> custom resource (CR) has the following primary functions:</p>
@@ -4141,16 +4304,21 @@ spec:
 </table>
 </div>
 <div class="sect2">
-<h3 id="setting-concurrency-limits-in-repository-crd_using-pipelines-as-code"><a class="anchor" href="#setting-concurrency-limits-in-repository-crd_using-pipelines-as-code"></a>Setting concurrency limits in the <code>Repository</code> CRD</h3>
+<h3 id="setting-concurrency-limits-in-repository-crd_using-pipelines-as-code"><a class="anchor" href="#setting-concurrency-limits-in-repository-crd_using-pipelines-as-code"></a>Setting concurrency limits</h3>
 <div class="paragraph _abstract">
-<p>You can use the <code>concurrency_limit</code> spec in the <code>Repository</code> CRD to define the maximum number of pipeline runs running simultaneously for a repository.</p>
+<p>You can use the <code>concurrency_limit</code> spec in the <code>Repository</code> custom resource definition (CRD) to define the maximum number of pipeline runs running simultaneously for a repository.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">my-repo</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">target-namespace</span>
 <span class="na">spec</span><span class="pi">:</span>
+<span class="c1"># ...</span>
   <span class="na">concurrency_limit</span><span class="pi">:</span> <span class="s">&lt;number&gt;</span>
-  <span class="s">...</span></code></pre>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4158,6 +4326,40 @@ spec:
 </div>
 <div class="paragraph">
 <p>For example, if you have three pipeline runs in the <code>.tekton</code> directory and you create a pull request with a <code>concurrency_limit</code> of <code>1</code> in the repository configuration, then all the pipeline runs are executed in an alphabetical order. At any given time, only one pipeline run is in the running state while the rest are queued.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="changing-source-branch-in-repository-crd_using-pipelines-as-code"><a class="anchor" href="#changing-source-branch-in-repository-crd_using-pipelines-as-code"></a>Changing the source branch for the pipeline definition</h3>
+<div class="paragraph _abstract">
+<p>By default, when processing a push event or a pull request event, Pipelines as Code fetches the pipeline definition from the branch that triggered the event. You can use the <code>pipelinerun_provenance</code> setting in the <code>Repository</code> custom resource definition (CRD) to fetch the definition from the default branch configured on the Git repository provider, such as <code>main</code>, <code>master</code>, or <code>trunk</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pipelinesascode.tekton.dev/v1alpha1"</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Repository</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">my-repo</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">target-namespace</span>
+<span class="na">spec</span><span class="pi">:</span>
+<span class="c1"># ...</span>
+  <span class="na">settings</span><span class="pi">:</span>
+    <span class="na">pipelinerun_provenance</span><span class="pi">:</span> <span class="s2">"</span><span class="s">default_branch"</span>
+<span class="c1"># ...</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can use this setting as a security precaution. With the default behaviour, Pipelines as Code uses the pipeline definition in the submitted pull request. With the <code>default-branch</code> setting, the pipeline definition must be merged into the default branch before it is run. This requirement ensures maximum possible verification of any changes during merge review.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -4274,7 +4476,7 @@ spec:
 </div>
 </div>
 <div class="sect1">
-<h2 id="using-pipelines-as-code-resolver_using-pipelines-as-code"><a class="anchor" href="#using-pipelines-as-code-resolver_using-pipelines-as-code"></a>Using Pipelines as Code resolver</h2>
+<h2 id="using-pipelines-as-code-resolver_using-pipelines-as-code"><a class="anchor" href="#using-pipelines-as-code-resolver_using-pipelines-as-code"></a>Using the Pipelines as Code resolver</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
 <p>The Pipelines as Code resolver ensures that a running pipeline run does not conflict with others.</p>
@@ -4415,7 +4617,7 @@ spec:
 <div class="ulist">
 <ul>
 <li>
-<p>If you use GitHub and the remote task URL uses the same host as the <code>Repository</code> CRD, Pipelines as Code uses the GitHub token and fetches the URL using the GitHub API.</p>
+<p>If you use GitHub and the remote task URL uses the same host as the <code>Repository</code> custom resource definition (CRD), Pipelines as Code uses the GitHub token and fetches the URL using the GitHub API.</p>
 <div class="paragraph">
 <p>For example, if you have a repository URL similar to <code><a href="https://github.com/&lt;organization&gt;/&lt;repository&gt" class="bare">https://github.com/&lt;organization&gt;/&lt;repository&gt</a>;</code> and the remote HTTP URL references a GitHub blob similar to <code><a href="https://github.com/&lt;organization&gt;/&lt;repository&gt;/blob/&lt;mainbranch&gt;/&lt;path&gt;/&lt;file&gt" class="bare">https://github.com/&lt;organization&gt;/&lt;repository&gt;/blob/&lt;mainbranch&gt;/&lt;path&gt;/&lt;file&gt</a>;</code>, Pipelines as Code fetches the task definition files from that private repository with the GitHub App token.</p>
 </div>
@@ -4821,7 +5023,7 @@ spec:
 </div>
 <div class="paragraph">
 <div class="title">Pipeline run execution</div>
-<p>A pipeline run always runs in the namespace of the <code>Repository</code> CRD associated with the repository that generated the event.</p>
+<p>A pipeline run always runs in the namespace of the <code>Repository</code> custom resource definition (CRD) associated with the repository that generated the event.</p>
 </div>
 <div class="paragraph">
 <p>You can observe the execution of your pipeline runs using the <code>tkn pac</code> CLI tool.</p>
@@ -4924,7 +5126,7 @@ If you need to view a pipeline run other than the last one, you can use the <cod
 </div>
 <div class="paragraph">
 <div class="title">Annotations for log error snippets</div>
-<p>In the Pipelines as Code config map, if you set the <code>error-detection-from-container-logs</code> parameter to <code>true</code>, Pipelines as Code detects the errors from the container logs and adds them as annotations on the pull request where the error occurred.</p>
+<p>In the <code>TektonConfig</code> custom resource, in the <code>pipelinesAsCode.settings</code> spec, you can set the <code>error-detection-from-container-logs</code> parameter to <code>true</code>. In this case, Pipelines as Code detects the errors from the container logs and adds them as annotations on the pull request where the error occurred.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -4934,7 +5136,15 @@ If you need to view a pipeline run other than the last one, you can use the <cod
 </td>
 <td class="content">
 <div class="paragraph">
-<p>This feature is in Technology Preview.</p>
+<p>Adding annotations for log error snippets is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
 </div>
 </td>
 </tr>
@@ -4949,7 +5159,7 @@ If you need to view a pipeline run other than the last one, you can use the <cod
 </div>
 </div>
 <div class="paragraph">
-<p>You can customize the regular expression used to detect the errors with the <code>error-detection-simple-regexp</code> field. The regular expression uses named groups to give flexibility on how to specify the matching. The groups needed to match are filename, line, and error. You can view the Pipelines as Code config map for the default regular expression.</p>
+<p>You can customize the regular expression used to detect the errors with the <code>error-detection-simple-regexp</code> parameter. The regular expression uses named groups to give flexibility on how to specify the matching. The groups needed to match are <code>filename</code>, <code>line</code>, and <code>error</code>. You can view the Pipelines as Code config map for the default regular expression.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4971,7 +5181,7 @@ If you need to view a pipeline run other than the last one, you can use the <cod
 </div>
 <div class="paragraph">
 <div class="title">Failures</div>
-<p>If a namespace is matched to a <code>Repository</code> CRD, Pipelines as Code emits its failure log messages in the Kubernetes events inside the namespace.</p>
+<p>If a namespace is matched to a <code>Repository</code> custom resource definition (CRD), Pipelines as Code emits its failure log messages in the Kubernetes events inside the namespace.</p>
 </div>
 <div class="paragraph">
 <div class="title">Status associated with Repository CRD</div>
@@ -5068,7 +5278,7 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 </table>
 </div>
 <div class="paragraph">
-<p>You can modify this configuration by setting the <code>secret-auto-create</code> flag to either a <code>false</code> or <code>true</code> value, as required in the Pipelines as Code config map.</p>
+<p>You can modify this configuration by setting the <code>secret-auto-create</code> parameter to either a <code>false</code> or <code>true</code> value, as required, in the <code>TektonConfig</code> custom resource, in the <code>pipelinesAsCode.settings</code> spec.</p>
 </div>
 <div class="ulist">
 <div class="title">Additional resources</div>
@@ -5131,7 +5341,7 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 <p>Using an incoming webhook URL and a shared secret, you can start a pipeline run in a repository.</p>
 </div>
 <div class="paragraph">
-<p>To use incoming webhooks, specify the following within the <code>spec</code> section of the <code>Repository</code> CRD:</p>
+<p>To use incoming webhooks, specify the following within the <code>spec</code> section of the <code>Repository</code> custom resource definition (CRD):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5215,7 +5425,7 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 <h2 id="customizing-pipelines-as-code-configuration_using-pipelines-as-code"><a class="anchor" href="#customizing-pipelines-as-code-configuration_using-pipelines-as-code"></a>Customizing Pipelines as Code configuration</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
-<p>To customize Pipelines as Code, cluster administrators can configure the following parameters using the <code>pipelines-as-code</code> config map in the <code>openshift-pipelines</code> namespace:</p>
+<p>To customize Pipelines as Code, cluster administrators can configure the following parameters in the <code>TektonConfig</code> custom resource, in the <code>pipelinesAsCode.settings</code> spec:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 2. Customizing Pipelines as Code configuration</caption>
@@ -5236,12 +5446,6 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>application-name</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The name of the application. For example, the name displayed in the GitHub Checks labels.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>"Pipelines as Code CI"</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>max-keep-days</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of the days for which the executed pipeline runs are kept in the <code>openshift-pipelines</code> namespace.</p>
-<p class="tableblock">Note that this <code>ConfigMap</code> setting does not affect the cleanups of a user&#8217;s pipeline runs, which are controlled by the annotations on the pipeline run definition in the user&#8217;s GitHub repository.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>secret-auto-create</code></p></td>
@@ -5301,7 +5505,27 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>error-log-snippet</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Enables or disables the view of a log snippet for the failed tasks, with an error in a pipeline. You can disable this parameter in the case of data leakage from your pipeline.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>error-detection-from-container-logs</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables or disables the inspection of container logs to detect error message and expose them as annotations on the pull request. This setting applies only if you are using the GitHub app.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>error-detection-max-number-of-lines</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum number of lines inspected in the container logs to search for error messages. Set to <code>-1</code> to inspect an unlimited number of lines.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>secret-github-app-token-scoped</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to <code>true</code>, the GitHub access token that Pipelines as Code generates using the GitHub app is scoped only to the repository from which Pipelines as Code fetches the pipeline definition. If set to <code>false</code>, you can use both the <code>TektonConfig</code> custom resource and the <code>Repository</code> custom resource to scope the token to additional repositories.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>secret-github-app-scope-extra-repos</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional repositories for scoping the generated GitHub access token.</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
@@ -5492,6 +5716,27 @@ pipelines-as-code-ci   https://github.com/openshift-pipelines/pipelines-as-code 
 </tbody>
 </table>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="splitting-pipelines-as-code-logs-by-namespace_using-pipelines-as-code"><a class="anchor" href="#splitting-pipelines-as-code-logs-by-namespace_using-pipelines-as-code"></a>Splitting Pipelines as Code logs by namespace</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The logs contain the namespace information to make it possible to filter logs or split the logs by a particular namespace. For example, to view the logs related to the <code>mynamespace</code> namespace, enter the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc logs pipelines-as-code-controller-&lt;unique-id&gt; <span class="nt">-n</span> openshift-pipelines | <span class="nb">grep </span>mynamespace <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>pipelines-as-code-controller-&lt;unique-id&gt;</code> with the Pipelines as Code controller name.</td>
+</tr>
+</table>
 </div>
 </div>
 </div>

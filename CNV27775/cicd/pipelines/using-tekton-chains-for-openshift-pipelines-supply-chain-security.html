@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2466,49 +2471,27 @@
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
 <li><a href="#tc-key-features">Key features</a></li>
-<li><a href="#installing-tekton-chains-using-pipelines-operator_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Installing Tekton Chains using the Red Hat OpenShift Pipelines Operator</a></li>
 <li><a href="#configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Configuring Tekton Chains</a>
 <ul class="sectlevel2">
-<li><a href="#supported-keys-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Supported keys for Tekton Chains configuration</a></li>
+<li><a href="#supported-parameters-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Supported parameters for Tekton Chains configuration</a></li>
 </ul>
 </li>
-<li><a href="#signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Signing secrets in Tekton Chains</a>
+<li><a href="#signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Secrets for signing data in Tekton Chains</a>
 <ul class="sectlevel2">
-<li><a href="#chains-signing-secrets-x509_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Signing using x509</a></li>
 <li><a href="#chains-signing-secrets-cosign_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Signing using cosign</a></li>
-<li><a href="#chains-troubleshooting-signing_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Troubleshooting signing</a></li>
+<li><a href="#chains-signing-secrets-skopeo_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Signing using skopeo</a></li>
+<li><a href="#chains-resolving-existing-secret_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Resolving the "secret already exists" error</a></li>
 </ul>
 </li>
-<li><a href="#authenticating-to-an-oci-registry_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Authenticating to an OCI registry</a>
+<li><a href="#authenticating-to-an-oci-registry_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Authenticating to an OCI registry</a></li>
+<li><a href="#creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Creating and verifying task run signatures without any additional authentication</a>
 <ul class="sectlevel2">
-<li><a href="#creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Creating and verifying task run signatures without any additional authentication</a></li>
+<li><a href="#additional-resources">Additional resources</a></li>
 </ul>
 </li>
 <li><a href="#using-tekton-chains-to-sign-and-verify-image-and-provenance_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Using Tekton Chains to sign and verify image and provenance</a></li>
 <li><a href="#additional-resources-tekton-chains">Additional resources</a></li>
 </ul>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Tekton Chains is a Technology Preview feature only. Technology Preview features
-are not supported with Red Hat production service level agreements (SLAs) and
-might not be functionally complete. Red Hat does not recommend using them
-in production. These features provide early access to upcoming product
-features, enabling customers to test functionality and provide feedback during
-the development process.</p>
-</div>
-<div class="paragraph">
-<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph _abstract">
 <p>Tekton Chains is a Kubernetes Custom Resource Definition (CRD) controller. You can use it to manage the supply chain security of the tasks and pipelines created using Red Hat OpenShift Pipelines.</p>
@@ -2517,21 +2500,7 @@ the development process.</p>
 <p>By default, Tekton Chains observes all task run executions in your OpenShift Container Platform cluster. When the task runs complete, Tekton Chains takes a snapshot of the task runs. It then converts the snapshot to one or more standard payload formats, and finally signs and stores all artifacts.</p>
 </div>
 <div class="paragraph">
-<p>To capture information about task runs, Tekton Chains uses the <code>Result</code> and <code>PipelineResource</code> objects. When the objects are unavailable, Tekton Chains the URLs and qualified digests of the OCI images.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The <code>PipelineResource</code> object is deprecated and will be removed in a future release; for manual use, the <code>Results</code> object is recommended.</p>
-</div>
-</td>
-</tr>
-</table>
+<p>To capture information about task runs, Tekton Chains uses <code>Result</code> objects. When the objects are unavailable, Tekton Chains the URLs and qualified digests of the OCI images.</p>
 </div>
 </div>
 </div>
@@ -2541,7 +2510,7 @@ the development process.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>You can sign task runs, task run results, and OCI registry images with cryptographic key types and services such as <code>cosign</code>.</p>
+<p>You can sign task runs, task run results, and OCI registry images with cryptographic keys that are generated by tools such as <code>cosign</code> and <code>skopeo</code>.</p>
 </li>
 <li>
 <p>You can use attestation formats such as <code>in-toto</code>.</p>
@@ -2554,11 +2523,79 @@ the development process.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="installing-tekton-chains-using-pipelines-operator_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#installing-tekton-chains-using-pipelines-operator_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Installing Tekton Chains using the Red Hat OpenShift Pipelines Operator</h2>
+<h2 id="configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Configuring Tekton Chains</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cluster administrators can use the <code>TektonChain</code> custom resource (CR) to install and manage Tekton Chains.</p>
+<p>The Red Hat OpenShift Pipelines Operator installs Tekton Chains by default. You can configure Tekton Chains by modifying the <code>TektonConfig</code> custom resource; the Operator automatically applies the changes that you make in this custom resource.</p>
 </div>
+<div class="paragraph">
+<p>To edit the custom resource, use the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc edit TektonConfig config</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The custom resource includes a <code>chain:</code> array. You can add any supported configuration parameters to this array, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">addon</span><span class="pi">:</span> <span class="pi">{}</span>
+  <span class="na">chain</span><span class="pi">:</span>
+    <span class="s">artifacts.taskrun.format</span><span class="pi">:</span> <span class="s">tekton</span>
+  <span class="na">config</span><span class="pi">:</span> <span class="pi">{}</span></code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supported-parameters-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#supported-parameters-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for Tekton Chains configuration</h3>
+<div class="paragraph">
+<p>Cluster administrators can use various supported parameter keys and values to configure specifications about task runs, OCI images, and storage.</p>
+</div>
+<div class="sect3">
+<h4 id="chains-supported-parameters-task-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-parameters-task-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for task run artifacts</h4>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Chains configuration: Supported parameters for task run artifacts</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.format</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The format for storing task run payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>in-toto</code>, <code>slsa/v1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>in-toto</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.storage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The storage backend for task run signatures. You can specify multiple backends as a comma-separated list, such as <code>“tekton,oci”</code>. To disable storing task run artifacts, provide an empty string <code>“”</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>oci</code>, <code>gcs</code>, <code>docdb</code>, <code>grafeas</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.signer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The signature backend for signing task run payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code>,<code>kms</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code></p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2567,96 +2604,17 @@ the development process.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Tekton Chains is an optional component of Red Hat OpenShift Pipelines. Currently, you cannot install it using the <code>TektonConfig</code> CR.</p>
+<p><code>slsa/v1</code> is an alias of <code>in-toto</code> for backwards compatibility.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="ulist discrete">
-<div class="title">Prerequisites</div>
-<ul class="discrete">
-<li>
-<p>Ensure that the Red Hat OpenShift Pipelines Operator is installed in the <code>openshift-pipelines</code> namespace on your cluster.</p>
-</li>
-</ul>
-</div>
-<div class="olist discrete">
-<div class="title">Procedure</div>
-<ol class="discrete">
-<li>
-<p>Create the <code>TektonChain</code> CR for your OpenShift Container Platform cluster.</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonChain</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">chain</span>
-<span class="na">spec</span><span class="pi">:</span>
-  <span class="na">targetNamespace</span><span class="pi">:</span> <span class="s">openshift-pipelines</span></code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Apply the <code>TektonChain</code> CR.</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc apply <span class="nt">-f</span> TektonChain.yaml <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Substitute with the file name of the <code>TektonChain</code> CR.</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Check the status of the installation.</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get tektonchains.operator.tekton.dev</code></pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Configuring Tekton Chains</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Tekton Chains uses a <code>ConfigMap</code> object named <code>chains-config</code> in the <code>openshift-pipelines</code> namespace for configuration.</p>
-</div>
-<div class="paragraph">
-<p>To configure Tekton Chains, use the following example:</p>
-</div>
-<div class="listingblock">
-<div class="title">Example: Configuring Tekton Chains</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc patch configmap chains-config <span class="nt">-n</span> openshift-pipelines <span class="nt">-p</span><span class="o">=</span><span class="s1">'{"data":{"artifacts.oci.storage": "", "artifacts.taskrun.format":"tekton", "artifacts.taskrun.storage": "tekton"}}'</span> <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Use a combination of supported key-value pairs in the JSON payload.</td>
-</tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="supported-keys-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#supported-keys-tekton-chains-configuration_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported keys for Tekton Chains configuration</h3>
-<div class="paragraph">
-<p>Cluster administrators can use various supported keys and values to configure specifications about task runs, OCI images, and storage.</p>
 </div>
 <div class="sect3">
-<h4 id="chains-supported-keys-task-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-keys-task-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported keys for task run</h4>
+<h4 id="chains-supported-parameters-pipeline-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-parameters-pipeline-run_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for pipeline run artifacts</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Chains configuration: Supported keys for task run</caption>
+<caption class="title">Table 2. Chains configuration: Supported parameters for pipeline run artifacts</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2665,38 +2623,59 @@ the development process.</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Supported keys</th>
+<th class="tableblock halign-left valign-top">Parameter</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Supported values</th>
-<th class="tableblock halign-left valign-top">Default values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.format</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The format to store task run payloads.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>in-toto</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.pipelinerun.format</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The format for storing pipeline run payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>in-toto</code>, <code>slsa/v1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>in-toto</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.pipelinerun.storage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The storage backend for storing pipeline run signatures. You can specify multiple backends as a comma-separated list, such as <code>“tekton,oci”</code>. To disable storing pipeline run artifacts, provide an empty string <code>“”</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>oci</code>, <code>gcs</code>, <code>docdb</code>, <code>grafeas</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.storage</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The storage backend for task run signatures. You can specify multiple backends as a comma-separated list, such as <code>“tekton,oci”</code>. To disable this artifact, provide an empty string <code>“”</code>.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>oci</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.taskrun.signer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The signature backend to sign task run payloads.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.pipelinerun.signer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The signature backend for signing pipeline run payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code>, <code>kms</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code></p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><code>slsa/v1</code> is an alias of <code>in-toto</code> for backwards compatibility.</p>
+</li>
+<li>
+<p>For the <code>grafeas</code> storage backend, only Container Analysis is supported. You can not configure the <code>grafeas</code> server address in the current version of Tekton Chains.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect3">
-<h4 id="chains-supported-keys-oci_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-keys-oci_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported keys for OCI</h4>
+<h4 id="chains-supported-parameters-oci_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-parameters-oci_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for OCI artifacts</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Chains configuration: Supported keys for OCI</caption>
+<caption class="title">Table 3. Chains configuration: Supported parameters for OCI artifacts</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2705,38 +2684,38 @@ the development process.</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Supported keys</th>
+<th class="tableblock halign-left valign-top">Parameter</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Supported values</th>
-<th class="tableblock halign-left valign-top">Default values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.oci.format</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The format to store OCI payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The format for storing OCI payloads.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>simplesigning</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>simplesigning</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.oci.storage</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The storage backend to for OCI signatures. You can specify multiple backends as a comma-separated list, such as <code>“oci,tekton”</code>. To disable the OCI artifact, provide an empty string <code>“”</code>.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>oci</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The storage backend for storing OCI signatures. You can specify multiple backends as a comma-separated list, such as <code>“oci,tekton”</code>. To disable storing OCI artifacts, provide an empty string <code>“”</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tekton</code>, <code>oci</code>, <code>gcs</code>, <code>docdb</code>, <code>grafeas</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>oci</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.oci.signer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The signature backend to sign OCI payloads.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code>, <code>cosign</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The signature backend for signing OCI payloads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code>, <code>kms</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>x509</code></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="chains-supported-keys-storage_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-keys-storage_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported keys for storage</h4>
+<h4 id="chains-supported-parameters-kms_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-parameters-kms_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for KMS signers</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Chains configuration: Supported keys for storage</caption>
+<caption class="title">Table 4. Chains configuration: Supported parameters for KMS signers</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2745,18 +2724,291 @@ the development process.</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Supported keys</th>
+<th class="tableblock halign-left valign-top">Parameter</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Supported values</th>
-<th class="tableblock halign-left valign-top">Default values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.oci.repository</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The OCI repository to store OCI signatures.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Currently, Chains support only the internal OpenShift OCI registry; other popular options such as <a href="https://quay.io/">Quay</a> is not supported.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.kmsref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URI reference to a KMS service to use in <code>kms</code> signers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supported schemes: <code>gcpkms://</code>, <code>awskms://</code>, <code>azurekms://</code>, <code>hashivault://</code>. See <a href="https://docs.sigstore.dev/cosign/kms_support">KMS Support</a> in the Sigstore documentation for more details.</p></td>
 <td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="chains-supported-parameters-storage_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-supported-parameters-storage_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Supported parameters for storage</h4>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Chains configuration: Supported parameters for storage</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>storage.gcs.bucket</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The GCS bucket for storage</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>artifacts.oci.repository</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The OCI repository for storing OCI signatures and attestation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you configure one of the artifact storage backends to <code>oci</code> and do not define this key, Tekton Chains stores the attestation alongside the stored OCI artifact itself. If you define this key, the attestation is not stored alongside the OCI artifact and is instead stored in the designated location. See the <a href="https://github.com/sigstore/cosign#specifying-registry">cosign documentation</a> for additional information.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>builder.id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The builder ID to set for in-toto attestations</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://tekton.dev/chains/v2</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If you enable the <code>docdb</code> storage method is for any artifacts, configure docstore storage options. For more information about the go-cloud docstore URI format, see the <a href="https://gocloud.dev/howto/docstore/">docstore package documentation</a>. Red Hat OpenShift Pipelines supports the following docstore services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>firestore</code></p>
+</li>
+<li>
+<p><code>dynamodb</code></p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Chains configuration: Supported parameters for <code>docstore</code> storage</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>storage.docdb.url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The go-cloud URI reference to a <code>docstore</code> collection. Used if the <code>docdb</code> storage method is enabled for any artifacts.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>firestore://projects/[PROJECT]/databases/(default)/documents/[COLLECTION]?name_field=name</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If you enable the <code>grafeas</code> storage method for any artifacts, configure Grafeas storage options. For more information about Grafeas notes and occurrences, see <a href="https://github.com/grafeas/grafeas/blob/master/docs/grafeas_concepts.md">Grafeas concepts</a>.</p>
+</div>
+<div class="paragraph">
+<p>To create occurrences, Red Hat OpenShift Pipelines must first create notes that are used to link occurrences. Red Hat OpenShift Pipelines creates two types of occurrences: <code>ATTESTATION</code> Occurrence and <code>BUILD</code> Occurrence.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift Pipelines uses the configurable <code>noteid</code> as the prefix of the note name. It appends the suffix <code>-simplesigning</code> for the <code>ATTESTATION</code> note and the suffix <code>-intoto</code> for the <code>BUILD</code> note. If the <code>noteid</code> field is not configured, Red Hat OpenShift Pipelines uses <code>tekton-&lt;NAMESPACE&gt;</code> as the prefix.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Chains configuration: Supported parameters for Grafeas storage</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>storage.grafeas.projectid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The {OCP} project in which the Grafeas server for storing occurrences is located.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>storage.grafeas.noteid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: the prefix to use for the name of all created notes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A string without spaces.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>storage.grafeas.notehint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: the <a href="https://github.com/grafeas/grafeas/blob/cd23d4dc1bef740d6d6d90d5007db5c9a2431c41/proto/v1/attestation.proto#L49"><code>human_readable_name</code></a> field for the Grafeas <code>ATTESTATION</code> note.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>This attestation note was generated by Tekton Chains</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Optionally, you can enable additional uploads of binary transparency attestations.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 8. Chains configuration: Supported parameters for transparency attestation storage</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>transparency.enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable or disable automatic binary transparency uploads.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code>, <code>false</code>, <code>manual</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>transparency.url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL for uploading binary transparency attestations, if enabled.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://rekor.sigstore.dev</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you set <code>transparency.enabled</code> to <code>manual</code>, only task runs and pipeline runs with the following annotation are uploaded to the transparency log:
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="s">chains.tekton.dev/transparency-upload</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you configure the <code>x509</code> signature backend, you can optionally enable keyless signing with Fulcio.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. Chains configuration: Supported parameters for <code>x509</code> keyless signing with Fulcio</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.fulcio.enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable or disable requesting automatic certificates from Fulcio.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code>, <code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.fulcio.address</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Fulcio address for requesting certificates, if enabled.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://v1.fulcio.sigstore.dev</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.fulcio.issuer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The expected OIDC issuer.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://oauth2.sigstore.dev/auth</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.fulcio.provider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The provider from which to request the ID Token.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>google</code>, <code>spiffe</code>, <code>github</code>, <code>filesystem</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red Hat OpenShift Pipelines attempts to use every provider</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.identity.token.file</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path to the file containing the ID Token.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.x509.tuf.mirror.url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL for the TUF server. <code>$TUF_URL/root.json</code> must be present.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://sigstore-tuf-root.storage.googleapis.com</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If you configure the <code>kms</code> signature backend, set the KMS configuration, including OIDC and Spire, as necessary.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Chains configuration: Supported parameters for KMS signing</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Supported values</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.address</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI of the KMS server (the value of <code>VAULT_ADDR</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.token</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication token for the KMS server (the value of <code>VAULT_TOKEN</code>).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.oidc.path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The path for OIDC authentication (for example, <code>jwt</code> for Vault).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.oidc.role</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The role for OIDC authentication.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.spire.sock</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URI of the Spire socket for the KMS token (for example, <code>unix:///tmp/spire-agent/public/api.sock</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>signers.kms.auth.spire.audience</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The audience for requesting a SVID from Spire.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2765,10 +3017,10 @@ the development process.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Signing secrets in Tekton Chains</h2>
+<h2 id="signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Secrets for signing data in Tekton Chains</h2>
 <div class="sectionbody">
 <div class="paragraph _abstract">
-<p>Cluster administrators can generate a key pair and use Tekton Chains to sign artifacts using a Kubernetes secret. For Tekton Chains to work, a private key and a password for encrypted keys must exist as part of the <code>signing-secrets</code> Kubernetes secret, in the <code>openshift-pipelines</code> namespace.</p>
+<p>Cluster administrators can generate a key pair and use Tekton Chains to sign artifacts using a Kubernetes secret. For Tekton Chains to work, a private key and a password for encrypted keys must exist as part of the <code>signing-secrets</code> secret in the <code>openshift-pipelines</code> namespace.</p>
 </div>
 <div class="paragraph">
 <p>Currently, Tekton Chains supports the <code>x509</code> and <code>cosign</code> signature schemes.</p>
@@ -2787,31 +3039,34 @@ the development process.</p>
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="chains-signing-secrets-x509_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-signing-secrets-x509_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Signing using x509</h3>
 <div class="paragraph">
-<p>To use the <code>x509</code> signing scheme with Tekton Chains, store the <code>x509.pem</code> private key of the <code>ed25519</code> or <code>ecdsa</code> type in the <code>signing-secrets</code> Kubernetes secret. Ensure that the key is stored as an unencrypted PKCS8 PEM file (<code>BEGIN PRIVATE KEY</code>).</p>
-</div>
+<p>To use the <code>x509</code> signing scheme with Tekton Chains, store the <code>x509.pem</code> private key of the <code>ed25519</code> or <code>ecdsa</code> type in the <code>signing-secrets</code> Kubernetes secret.</p>
 </div>
 <div class="sect2">
 <h3 id="chains-signing-secrets-cosign_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-signing-secrets-cosign_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Signing using cosign</h3>
 <div class="paragraph">
-<p>To use the <code>cosign</code> signing scheme with Tekton Chains:</p>
+<p>You can use the <code>cosign</code> signing scheme with Tekton Chains using the <code>cosign</code> tool.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You installed the <a href="https://docs.sigstore.dev/cosign/installation/">cosign</a> tool.</p>
+</li>
+</ul>
 </div>
 <div class="olist arabic">
+<div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Install <a href="https://docs.sigstore.dev/cosign/installation/">cosign</a>.</p>
-</li>
-<li>
-<p>Generate the <code>cosign.key</code> and <code>cosign.pub</code> key pairs.</p>
+<p>Generate the <code>cosign.key</code> and <code>cosign.pub</code> key pairs by running the following command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>cosign generate-key-pair k8s://openshift-pipelines/signing-secrets</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Cosign prompts you for a password, and creates a Kubernetes secret.</p>
+<p>Cosign prompts you for a password and then creates a Kubernetes secret.</p>
 </div>
 </li>
 <li>
@@ -2821,22 +3076,143 @@ the development process.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="chains-troubleshooting-signing_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-troubleshooting-signing_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Troubleshooting signing</h3>
+<h3 id="chains-signing-secrets-skopeo_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-signing-secrets-skopeo_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Signing using skopeo</h3>
 <div class="paragraph">
-<p>If the signing secrets are already populated, you might get the following error:</p>
+<p>You can generate keys using the <code>skopeo</code> tool and use them in the <code>cosign</code> signing scheme with Tekton Chains.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You installed the <a href="https://github.com/containers/skopeo">skopeo</a> tool.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Generate a public/private key pair by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>skopeo generate-sigstore-key <span class="nt">--output-prefix</span> &lt;mykey&gt; <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>&lt;mykey&gt;</code> with a key name of your choice.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Skopeo prompts you for a passphrase for the private key and then creates the key files named <code>&lt;mykey&gt;.private</code> and <code>&lt;mykey&gt;.pub</code>.</p>
+</div>
+</li>
+<li>
+<p>Encode the <code>&lt;mykey&gt;.pub</code> file using the <code>base64</code> tool by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">base64</span> <span class="nt">-w</span> 0 &lt;mykey&gt;.pub <span class="o">&gt;</span> b64.pub</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Encode the <code>&lt;mykey&gt;.private</code> file using the <code>base64</code> tool by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">base64</span> <span class="nt">-w</span> 0 &lt;mykey&gt;.private <span class="o">&gt;</span> b64.private</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Encode the passhprase using the <code>base64</code> tool by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'&lt;passphrase&gt;'</span> | <span class="nb">base64</span> <span class="nt">-w</span> 0 <span class="o">&gt;</span> b64.passphrase <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>&lt;passphrase&gt;</code> with the passphrase that you used for the key pair.</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Create the <code>signing-secrets</code> secret in the <code>openshift-pipelines</code> namespace by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create secret generic signing-secrets <span class="nt">-n</span> openshift-pipelines</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Edit the <code>signing-secrets</code> secret by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">$ oc edit secret -n openshift-pipelines signing-secrets</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add the encoded keys in the data of the secret in the following way:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="s">Error from server (AlreadyExists)</span><span class="pi">:</span> <span class="s">secrets "signing-secrets" already exists</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">data</span><span class="pi">:</span>
+  <span class="s">cosign.key</span><span class="pi">:</span> <span class="s">&lt;Encoded &lt;mykey&gt;.private&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="s">cosign.password</span><span class="pi">:</span> <span class="s">&lt;Encoded passphrase&gt;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="s">cosign.pub</span><span class="pi">:</span> <span class="s">&lt;Encoded &lt;mykey&gt;.pub&gt;</span> <i class="conum" data-value="3"></i><b>(3)</b>
+<span class="na">immutable</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Secret</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">signing-secrets</span>
+<span class="c1"># ...</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">Opaque</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>&lt;Encoded &lt;mykey&gt;.private&gt;</code> with the content of the <code>b64.private</code> file.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Replace <code>&lt;Encoded passphrase&gt;</code> with the content of the <code>b64.passphrase</code> file.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Replace <code>&lt;Encoded &lt;mykey&gt;.pub&gt;</code> with the content of the <code>b64.pub</code> file.</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="chains-resolving-existing-secret_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#chains-resolving-existing-secret_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Resolving the "secret already exists" error</h3>
+<div class="paragraph">
+<p>If the <code>signing-secret</code> secret is already populated, the command to create this secret might output the following error message:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">Error from server (AlreadyExists): secrets "signing-secrets" already exists</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To resolve the error:</p>
+<p>You can resolve this error by deleting the secret.</p>
 </div>
 <div class="olist arabic">
+<div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Delete the secrets:</p>
+<p>Delete the <code>signing-secret</code> secret by running the following command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc delete secret signing-secrets <span class="nt">-n</span> openshift-pipelines</code></pre>
@@ -2844,7 +3220,7 @@ the development process.</p>
 </div>
 </li>
 <li>
-<p>Recreate the key pairs and store them in the secrets using your preferred signing scheme.</p>
+<p>Re-create the key pairs and store them in the secret using your preferred signing scheme.</p>
 </li>
 </ol>
 </div>
@@ -2950,8 +3326,11 @@ the development process.</p>
 </li>
 </ol>
 </div>
-<div class="sect2">
-<h3 id="creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Creating and verifying task run signatures without any additional authentication</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security"><a class="anchor" href="#creating-and-verifying-task-run-signatures-without-any-additional-authentication_using-tekton-chains-for-openshift-pipelines-supply-chain-security"></a>Creating and verifying task run signatures without any additional authentication</h2>
+<div class="sectionbody">
 <div class="paragraph _abstract">
 <p>To verify signatures of task runs using Tekton Chains with any additional authentication, perform the following tasks:</p>
 </div>
@@ -2976,7 +3355,7 @@ the development process.</p>
 </div>
 <div class="paragraph">
 <div class="title">Prerequisites</div>
-<p>Ensure that the following are installed on the cluster:</p>
+<p>Ensure that the following components are installed on the cluster:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2995,26 +3374,31 @@ the development process.</p>
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Create an encrypted x509 key pair and save it as a Kubernetes secret:</p>
+<p>Create an encrypted x509 key pair and save it as a Kubernetes secret. For more information about creating a key pair and saving it as a secret, see "Signing secrets in Tekton Chains".</p>
+</li>
+<li>
+<p>In the Tekton Chains configuration, disable the OCI storage, and set the task run storage and format to <code>tekton</code>. In the <code>TektonConfig</code> custom resource set the following values:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>cosign generate-key-pair k8s://openshift-pipelines/signing-secrets</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
+<span class="na">spec</span><span class="pi">:</span>
+<span class="c1"># ...</span>
+    <span class="na">chain</span><span class="pi">:</span>
+      <span class="s">artifacts.oci.storage</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+      <span class="s">artifacts.taskrun.format</span><span class="pi">:</span> <span class="s">tekton</span>
+      <span class="s">artifacts.taskrun.storage</span><span class="pi">:</span> <span class="s">tekton</span>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Provide a password when prompted. Cosign stores the resulting private key as part of the <code>signing-secrets</code> Kubernetes secret in the <code>openshift-pipelines</code> namespace.</p>
+<p>For more information about configuring Tekton Chains using the <code>TektonConfig</code> custom resource, see "Configuring Tekton Chains".</p>
 </div>
 </li>
 <li>
-<p>In the Tekton Chains configuration, disable the OCI storage, and set the task run storage and format to <code>tekton</code>.</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc patch configmap chains-config <span class="nt">-n</span> openshift-pipelines <span class="nt">-p</span><span class="o">=</span><span class="s1">'{"data":{"artifacts.oci.storage": "", "artifacts.taskrun.format":"tekton", "artifacts.taskrun.storage": "tekton"}}'</span></code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Restart the Tekton Chains controller to ensure that the modified configuration is applied.</p>
+<p>To restart the Tekton Chains controller to ensure that the modified configuration is applied, enter the following command:</p>
 <div class="listingblock terminal">
 <div class="content">
 <pre class="rouge highlight nowrap"><code>$ oc delete po -n openshift-pipelines -l app=tekton-chains-controller</code></pre>
@@ -3022,28 +3406,38 @@ the development process.</p>
 </div>
 </li>
 <li>
-<p>Create a task run.</p>
+<p>Create a task run by entering the following command:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create <span class="nt">-f</span> https://raw.githubusercontent.com/tektoncd/chains/main/examples/taskruns/task-output-image.yaml <i class="conum" data-value="1"></i><b>(1)</b>
-<span class="go">taskrun.tekton.dev/build-push-run-output-image-qbjvh created</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create <span class="nt">-f</span> https://raw.githubusercontent.com/tektoncd/chains/main/examples/taskruns/task-output-image.yaml <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Substitute with the URI or file path pointing to your task run.</td>
+<td>Replace the example URI with the URI or file path pointing to your task run.</td>
 </tr>
 </table>
 </div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">taskrun.tekton.dev/build-push-run-output-image-qbjvh created</span></code></pre>
+</div>
+</div>
 </li>
 <li>
-<p>Check the status of the steps, and wait till the process finishes.</p>
+<p>Check the status of the steps by entering the following command. Wait until the process finishes.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span>
-<span class="go">[...truncated output...]
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">[...truncated output...]
 NAME                            STATUS
 ∙ create-dir-builtimage-9467f   Completed
 ∙ git-source-sourcerepo-p2sk8   Completed
@@ -3054,25 +3448,53 @@ NAME                            STATUS
 </div>
 </li>
 <li>
-<p>Retrieve the signature and payload from the object stored as <code>base64</code> encoded annotations:</p>
+<p>To retrieve the signature from the object stored as <code>base64</code> encoded annotations, enter the following commands:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">export </span><span class="nv">TASKRUN_UID</span><span class="o">=</span><span class="si">$(</span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span> <span class="nt">-o</span>  <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">'{.metadata.uid}'</span><span class="si">)</span>
-<span class="gp">$</span><span class="w"> </span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span> <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.metadata.annotations.chains</span><span class="se">\.</span><span class="s2">tekton</span><span class="se">\.</span><span class="s2">dev/signature-taskrun-</span><span class="nv">$TASKRUN_UID</span><span class="s2">}"</span> <span class="o">&gt;</span> signature
-<span class="gp">$</span><span class="w"> </span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span> <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.metadata.annotations.chains</span><span class="se">\.</span><span class="s2">tekton</span><span class="se">\.</span><span class="s2">dev/payload-taskrun-</span><span class="nv">$TASKRUN_UID</span><span class="s2">}"</span> | <span class="nb">base64</span> <span class="nt">-d</span> <span class="o">&gt;</span> payload</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span> <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.metadata.annotations.chains</span><span class="se">\.</span><span class="s2">tekton</span><span class="se">\.</span><span class="s2">dev/signature-taskrun-</span><span class="nv">$TASKRUN_UID</span><span class="s2">}"</span> | <span class="nb">base64</span> <span class="nt">-d</span> <span class="o">&gt;</span> sig</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">export </span><span class="nv">TASKRUN_UID</span><span class="o">=</span><span class="si">$(</span>tkn <span class="nb">tr </span>describe <span class="nt">--last</span> <span class="nt">-o</span>  <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">'{.metadata.uid}'</span><span class="si">)</span></code></pre>
 </div>
 </div>
 </li>
 <li>
-<p>Verify the signature.</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>cosign verify-blob <span class="nt">--key</span> k8s://openshift-pipelines/signing-secrets <span class="nt">--signature</span> ./signature ./payload
-<span class="go">Verified OK</span></code></pre>
-</div>
-</div>
+<p>To verify the signature using the public key that you created, enter the following command:</p>
 </li>
 </ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">$ cosign verify-blob-attestation --insecure-ignore-tlog --key path/to/cosign.pub --signature sig --type slsaprovenance --check-claims=false /dev/null <i class="conum" data-value="1"></i><b>(1)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>path/to/cosign.pub</code> with the path name of the public key file.
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">Verified OK</span></code></pre>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="additional-resources"><a class="anchor" href="#additional-resources"></a>Additional resources</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#signing-secrets-in-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Secrets for signing data in Tekton Chains</a></p>
+</li>
+<li>
+<p><a href="#configuring-tekton-chains_using-tekton-chains-for-openshift-pipelines-supply-chain-security">Configuring Tekton Chains</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>

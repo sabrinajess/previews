@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2480,7 +2485,7 @@
 <li><a href="#op-disabling-automatic-creation-of-rbac-resources_customizing-configurations-in-the-tektonconfig-cr">Disabling the automatic creation of RBAC resources</a></li>
 <li><a href="#op-automatic-pruning-taskrun-pipelinerun_customizing-configurations-in-the-tektonconfig-cr">Automatic pruning of task runs and pipeline runs</a>
 <ul class="sectlevel2">
-<li><a href="#default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr">Default pruner configuration</a></li>
+<li><a href="#default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr">Configuring the pruner</a></li>
 <li><a href="#annotations-for-automatic-pruning-taskruns-pipelineruns_customizing-configurations-in-the-tektonconfig-cr">Annotations for automatically pruning task runs and pipeline runs</a></li>
 </ul>
 </li>
@@ -2914,7 +2919,7 @@
 <h2 id="op-automatic-pruning-taskrun-pipelinerun_customizing-configurations-in-the-tektonconfig-cr"><a class="anchor" href="#op-automatic-pruning-taskrun-pipelinerun_customizing-configurations-in-the-tektonconfig-cr"></a>Automatic pruning of task runs and pipeline runs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Stale <code>TaskRun</code> and <code>PipelineRun</code> objects and their executed instances occupy physical resources that can be used for active runs. For optimal utilization of these resources, Red Hat OpenShift Pipelines provides annotations that cluster administrators can use to automatically prune the unused objects and their instances in various namespaces.</p>
+<p>Stale <code>TaskRun</code> and <code>PipelineRun</code> objects and their executed instances occupy physical resources that can be used for active runs. For optimal utilization of these resources, Red Hat OpenShift Pipelines provides a pruner component that automatically removes unused objects and their instances in various namespaces.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2924,59 +2929,75 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Configuring automatic pruning by specifying annotations affects the entire namespace. You cannot selectively auto-prune an individual task run or pipeline run in a namespace.</p>
+<p>You can configure the pruner for your entire installation by using the <code>TektonConfig</code> custom resource and modify configuration for a namespace by using namespace annotations. However, you cannot selectively auto-prune an individual task run or pipeline run in a namespace.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="sect2">
-<h3 id="default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr"><a class="anchor" href="#default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr"></a>Default pruner configuration</h3>
+<h3 id="default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr"><a class="anchor" href="#default-pruner-configuration_customizing-configurations-in-the-tektonconfig-cr"></a>Configuring the pruner</h3>
 <div class="paragraph">
-<p>The default configuration for periodic pruning of resources associated with pipeline runs is as follows:</p>
+<p>You can use the <code>TektonConfig</code> custom resource to configure periodic pruning of resources associated with pipeline runs and task runs.</p>
+</div>
+<div class="paragraph">
+<p>The following example corresponds to the default configuration:</p>
 </div>
 <div class="listingblock">
-<div class="title">Example of the default configuration</div>
+<div class="title">Example of the pruner configuration</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.tekton.dev/v1alpha1</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">TektonConfig</span>
 <span class="na">metadata</span><span class="pi">:</span>
   <span class="na">name</span><span class="pi">:</span> <span class="s">config</span>
-<span class="nn">...</span>
+<span class="c1"># ...</span>
 <span class="na">spec</span><span class="pi">:</span>
   <span class="na">pruner</span><span class="pi">:</span>
-    <span class="na">keep</span><span class="pi">:</span> <span class="m">100</span>
     <span class="na">resources</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">pipelinerun</span>
-    <span class="na">schedule</span><span class="pi">:</span> <span class="s">0 8 * * *</span>
-<span class="nn">...</span></code></pre>
+      <span class="pi">-</span> <span class="s">taskrun</span>
+      <span class="pi">-</span> <span class="s">pipelinerun</span>
+    <span class="na">keep</span><span class="pi">:</span> <span class="m">100</span>
+    <span class="na">prune-per-resource</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">schedule</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*"</span>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>You can override the default pruner configuration for a namespace by using annotations on namespace.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="annotations-for-automatic-pruning-taskruns-pipelineruns_customizing-configurations-in-the-tektonconfig-cr"><a class="anchor" href="#annotations-for-automatic-pruning-taskruns-pipelineruns_customizing-configurations-in-the-tektonconfig-cr"></a>Annotations for automatically pruning task runs and pipeline runs</h3>
-<div class="paragraph">
-<p>To automatically prune the resources associated with task runs and pipeline runs in a namespace, you can set the following annotations in the namespace:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>operator.tekton.dev/prune.schedule</code>: If the value of this annotation is different from the value specified in the <code>TektonConfig</code> custom resource definition, a new cron job in that namespace is created.</p>
-</li>
-<li>
-<p><code>operator.tekton.dev/prune.skip</code>: When set to <code>true</code>, the namespace for which it is configured is not pruned.</p>
-</li>
-<li>
-<p><code>operator.tekton.dev/prune.resources</code>: This annotation accepts a comma-separated list of resources. To prune a single resource such as a pipeline run, set this annotation to <code>"pipelinerun"</code>. To prune multiple resources, such as task run and pipeline run, set this annotation to <code>"taskrun, pipelinerun"</code>.</p>
-</li>
-<li>
-<p><code>operator.tekton.dev/prune.keep</code>: Use this annotation to retain a resource without pruning.</p>
-</li>
-<li>
-<p><code>operator.tekton.dev/prune.keep-since</code>: Use this annotation to retain resources based on their age. The value for this annotation must be equal to the age of the resource in minutes. For example, to retain resources which were created not more than five days ago, set <code>keep-since</code> to <code>7200</code>.</p>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Supported parameters for pruner configuration</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>schedule</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Cron schedule for running the pruner process. The default schedule runs the process at 08:00 every day. For more information about the Cron schedule syntax, see <a href="https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax">Cron schedule syntax</a> in the Kubernetes documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>resources</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The resource types to which the pruner applies. The available resource types are <code>taskrun</code> and <code>pipelinerun</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keep</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of most recent resources of every type to keep.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prune-per-resource</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to <code>false</code>, the value for the <code>keep</code> parameter denotes the total number of task runs or pipeline runs. For example, if <code>keep</code> is set to <code>100</code>, then the pruner keeps 100 most recent task runs and 100 most recent pipeline runs and removes all other resources.</p>
+<p class="tableblock">If set to <code>true</code>, the value for the <code>keep</code> parameter is calculated separately for pipeline runs referencing each pipeline and for task runs referencing each task. For example, if <code>keep</code> is set to <code>100</code>, then the pruner keeps 100 most recent pipeline runs for <code>Pipeline1</code>, 100 most recent pipeline runs for <code>Pipeline2</code>, 100 most recent task runs for <code>Task1</code>, and so on, and removes all other resources.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keep-since</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum time for which to keep resources, in minutes. For example, to retain resources which were created not more than five days ago, set <code>keep-since</code> to <code>7200</code>.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2985,12 +3006,61 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The <code>keep</code> and <code>keep-since</code> annotations are mutually exclusive. For any resource, you must configure only one of them.</p>
+<p>The <code>keep</code> and <code>keep-since</code> parameters are mutually exclusive. Use only one of them in your configuration.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="annotations-for-automatic-pruning-taskruns-pipelineruns_customizing-configurations-in-the-tektonconfig-cr"><a class="anchor" href="#annotations-for-automatic-pruning-taskruns-pipelineruns_customizing-configurations-in-the-tektonconfig-cr"></a>Annotations for automatically pruning task runs and pipeline runs</h3>
+<div class="paragraph">
+<p>To modify the configuration for automatic pruning of task runs and pipeline runs in a namespace, you can set annotations in the namespace.</p>
+</div>
+<div class="paragraph">
+<p>The following namespace annotations have the same meanings as the corresponding keys in the <code>TektonConfig</code> custom resource:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>operator.tekton.dev/prune.schedule</code></p>
+</li>
+<li>
+<p><code>operator.tekton.dev/prune.resources</code></p>
+</li>
+<li>
+<p><code>operator.tekton.dev/prune.keep</code></p>
+</li>
+<li>
+<p><code>operator.tekton.dev/prune.prune-per-resource</code></p>
+</li>
+<li>
+<p><code>operator.tekton.dev/prune.keep-since</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>operator.tekton.dev/prune.resources</code> annotation accepts a comma-separated list. To prune both task runs and pipeline runs, set this annotation to <code>"taskrun, pipelinerun"</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following additional namespace annotations are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>operator.tekton.dev/prune.skip</code>: When set to <code>true</code>, the namespace for which the annotation is configured is not pruned.</p>
 </li>
 <li>
 <p><code>operator.tekton.dev/prune.strategy</code>: Set the value of this annotation to either <code>keep</code> or <code>keep-since</code>.</p>
@@ -2998,16 +3068,19 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>For example, consider the following annotations that retain all task runs and pipeline runs created in the last five days, and deletes the older resources:</p>
+<p>For example, the following annotations retain all task runs and pipeline runs created in the last five days and delete the older resources:</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of auto-pruning annotations</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">Namespace</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="c1"># ...</span>
+<span class="na">spec</span><span class="pi">:</span>
   <span class="na">annotations</span><span class="pi">:</span>
     <span class="s">operator.tekton.dev/prune.resources</span><span class="pi">:</span> <span class="s2">"</span><span class="s">taskrun,</span><span class="nv"> </span><span class="s">pipelinerun"</span>
     <span class="s">operator.tekton.dev/prune.keep-since</span><span class="pi">:</span> <span class="m">7200</span>
-<span class="nn">...</span></code></pre>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 </div>

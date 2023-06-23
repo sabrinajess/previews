@@ -551,7 +551,7 @@
       <ul id="topicGroup6" class="collapse  list-unstyled">
             <li><a class="" href="../../updating/index.html">Updating clusters overview</a></li>
             <li><a class="" href="../../updating/understanding-openshift-updates.html">Understanding OpenShift updates</a></li>
-            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding upgrade channels</a></li>
+            <li><a class="" href="../../updating/understanding-upgrade-channels-release.html">Understanding update channels and releases</a></li>
             <li><a class="" href="../../updating/understanding-openshift-update-duration.html">Understanding OpenShift update duration</a></li>
             <li><a class="" href="../../updating/updating-cluster-prepare.html">Preparing to update to OpenShift Container Platform 4.13</a></li>
             <li><a class="" href="../../updating/preparing-eus-eus-upgrade.html">Preparing to perform an EUS-to-EUS update</a></li>
@@ -778,6 +778,11 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-aws.html">Authenticating the cert-manager Operator with AWS Security Token Service</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authentication-non-sts.html">Authenticating the cert-manager Operator for Red Hat OpenShift on AWS</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -2311,7 +2316,6 @@
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-pci-passthrough.html" style="padding-left: 70px;">Configuring PCI passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-vgpu-passthrough.html" style="padding-left: 70px;">Configuring vGPU passthrough</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-configuring-mediated-devices.html" style="padding-left: 70px;">Configuring mediated devices</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-automatic-bootsource-updates.html" style="padding-left: 70px;">Automatic importing and updating of pre-defined boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/advanced_vm_management/virt-enabling-descheduler-evictions.html" style="padding-left: 70px;">Enabling descheduler evictions on virtual machines</a></li>                  </ul>
                   </li>
 
@@ -2361,7 +2365,6 @@
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-moving-local-vm-disk-to-different-node.html" style="padding-left: 70px;">Moving a local virtual machine disk to a different node</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-expanding-virtual-storage-with-blank-disk-images.html" style="padding-left: 70px;">Expanding virtual storage by adding blank disk images</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-cloning-a-datavolume-using-smart-cloning.html" style="padding-left: 70px;">Cloning a data volume using smart-cloning</a></li>
-                    <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-creating-and-using-boot-sources.html" style="padding-left: 70px;">Creating and using boot sources</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-hot-plugging-virtual-disks.html" style="padding-left: 70px;">Hot plugging virtual disks</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.html" style="padding-left: 70px;">Using container disks with virtual machines</a></li>
                     <li><a class="" href="../../virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.html" style="padding-left: 70px;">Preparing CDI scratch space</a></li>
@@ -2377,7 +2380,9 @@
                   <li><a class="" href="../../virt/vm_templates/virt-editing-vm-template.html">Editing virtual machine templates</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-dedicated-resources-vm-template.html">Enabling dedicated resources for a virtual machine template</a></li>
                   <li><a class="" href="../../virt/vm_templates/virt-deploying-vm-template-to-custom-namespace.html">Deploying a virtual machine template to a custom namespace</a></li>
-                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>              </ul>
+                  <li><a class="" href="../../virt/vm_templates/virt-deleting-vm-template.html">Deleting a virtual machine template</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-creating-and-using-boot-sources.html">Creating and using boot sources</a></li>
+                  <li><a class="" href="../../virt/vm_templates/virt-automatic-bootsource-updates.html">Managing automatic boot source updates</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-11"><span id="sgSpan-34-11" class="fa fa-caret-right"></span>&nbsp;Live migration</a>
               <ul id="topicSubGroup-34-11" class="nav-tertiary list-unstyled collapse">
@@ -2479,6 +2484,7 @@
 <li><a href="#ossm-upgrading-operator_ossm-upgrade">Upgrading the Operators</a></li>
 <li><a href="#upgrading-control-plane">Upgrading the control plane</a>
 <ul class="sectlevel2">
+<li><a href="#ossm-upgrade-23-24-changes_ossm-upgrade">Upgrade changes from version 2.3 to version 2.4</a></li>
 <li><a href="#ossm-upgrade-22-23-changes_ossm-upgrade">Upgrade changes from version 2.2 to version 2.3</a></li>
 <li><a href="#ossm-upgrade-21-22-changes_ossm-upgrade">Upgrade changes from version 2.1 to version 2.2</a></li>
 <li><a href="#ossm-upgrade-20-21-changes_ossm-upgrade">Upgrade changes from version 2.0 to version 2.1</a></li>
@@ -2494,7 +2500,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>To access the most current features of Red Hat OpenShift Service Mesh, upgrade to the current version, 2.3.3.</p>
+<p>To access the most current features of Red Hat OpenShift Service Mesh, upgrade to the current version, 2.4.</p>
 </div>
 </div>
 </div>
@@ -2544,7 +2550,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Operator</strong> version - The most current Operator version is 2.3.3. The Operator version number only indicates the version of the currently installed Operator. Because the Red Hat OpenShift Service Mesh Operator supports multiple versions of the Service Mesh control plane, the version of the Operator does not determine the version of your deployed <code>ServiceMeshControlPlane</code> resources.</p>
+<p><strong>Operator</strong> version - The most current Operator version is 2.4. The Operator version number only indicates the version of the currently installed Operator. Because the Red Hat OpenShift Service Mesh Operator supports multiple versions of the Service Mesh control plane, the version of the Operator does not determine the version of your deployed <code>ServiceMeshControlPlane</code> resources.</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2758,6 +2764,53 @@
 <p>For more information about migrating your extensions, refer to <a href="../../service_mesh/v2x/ossm-extensions.html#ossm-extensions-migration-overview_ossm-extensions">Migrating from ServiceMeshExtension to WasmPlugin resources</a>.</p>
 </div>
 <div class="sect2">
+<h3 id="ossm-upgrade-23-24-changes_ossm-upgrade"><a class="anchor" href="#ossm-upgrade-23-24-changes_ossm-upgrade"></a>Upgrade changes from version 2.3 to version 2.4</h3>
+<div class="paragraph">
+<p>Upgrading the Service Mesh control plane from version 2.3 to 2.4 introduces the following behavioral changes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Support for Istio OpenShift Routing (IOR) has been deprecated. IOR functionality is still enabled, but it will be removed in a future release.</p>
+</li>
+<li>
+<p>The following cipher suites are no longer supported, and were removed from the list of ciphers used in client and server side TLS negotiations.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ECDHE-ECDSA-AES128-SHA</p>
+</li>
+<li>
+<p>ECDHE-RSA-AES128-SHA</p>
+</li>
+<li>
+<p>AES128-GCM-SHA256</p>
+</li>
+<li>
+<p>AES128-SHA</p>
+</li>
+<li>
+<p>ECDHE-ECDSA-AES256-SHA</p>
+</li>
+<li>
+<p>ECDHE-RSA-AES256-SHA</p>
+</li>
+<li>
+<p>AES256-GCM-SHA384</p>
+</li>
+<li>
+<p>AES256-SHA</p>
+<div class="paragraph">
+<p>Applications that require access to services that use one of these cipher suites will fail to connect when the proxy initiates a TLS connection.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="ossm-upgrade-22-23-changes_ossm-upgrade"><a class="anchor" href="#ossm-upgrade-22-23-changes_ossm-upgrade"></a>Upgrade changes from version 2.2 to version 2.3</h3>
 <div class="paragraph">
 <p>Upgrading the Service Mesh control plane from version 2.2 to 2.3 introduces the following behavioral changes:</p>
@@ -2819,7 +2872,7 @@ admission webhook smcp.validation.maistra.io denied the request: [support for po
     <span class="na">type</span><span class="pi">:</span> <span class="s">Istiod</span>
   <span class="na">telemetry</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">Istiod</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.3</span></code></pre>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span></code></pre>
 </div>
 </div>
 <div id="ossm-upgrading-differences-behavior_ossm-upgrade" class="ulist">
@@ -2928,7 +2981,7 @@ admission webhook smcp.validation.maistra.io denied the request: [support for po
 <span class="na">metadata</span><span class="pi">:</span>
   <span class="na">name</span><span class="pi">:</span> <span class="s">basic</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.3</span></code></pre>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">v2.4</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
